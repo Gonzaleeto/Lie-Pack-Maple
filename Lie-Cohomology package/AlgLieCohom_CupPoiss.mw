@@ -4,7 +4,7 @@
 <Label-Scheme value="2" prefix=""/>
 <View-Properties presentation="false" autoexpanding_sections="true" UserProfileName="Perfil de Maple Predeterminado" NumericFormat-ApplyInteger="true" NumericFormat-ApplyRational="true" NumericFormat-ApplyExponent="false" editable="true">
 </View-Properties>
-<MapleNet-Properties prettyprint="3" warnlevel="3" preplot="" helpbrowser="standard" displayprecision="-1" echo="1" unitattributes="&quot;fontweight&quot; = &quot;bold&quot;" imaginaryunit="I" longdelim="true" elisiontermsthreshold="10000" elisiondigitsafter="100" elisiondigitsbefore="100" plotdevice="inline" errorbreak="1" plotoptions="" plotdriver="opengl" quiet="false" elisiontermsbefore="100" elisiontermsafter="100" screenwidth="79" indentamount="4" plotoutput="terminal" screenpixelheight="768" rtablesize="10" useclientjvm="true" labelwidth="20" postplot="" typesetting="extended" ansi="false" elisiondigitsthreshold="10000" showassumed="1" errorcursor="false" labelling="true" screenheight="25" prompt="&gt; " verboseproc="1" latexwidth="8.0" ShowLabels="true"/>
+<MapleNet-Properties prettyprint="3" warnlevel="3" preplot="" helpbrowser="standard" displayprecision="-1" echo="1" unitattributes="&quot;fontweight&quot; = &quot;bold&quot;" imaginaryunit="I" longdelim="true" elisiontermsthreshold="10000" elisiondigitsafter="100" elisiondigitsbefore="100" plotdevice="inline" errorbreak="1" plotoptions="" plotdriver="opengl" quiet="false" elisiontermsbefore="100" elisiontermsafter="100" screenwidth="79" indentamount="4" plotoutput="terminal" screenpixelheight="768" rtablesize="infinity" useclientjvm="true" labelwidth="20" postplot="" typesetting="extended" ansi="false" elisiondigitsthreshold="10000" showassumed="1" errorcursor="false" labelling="true" screenheight="25" prompt="&gt; " verboseproc="1" latexwidth="8.0" ShowLabels="true"/>
 <Styles>
 <Font name="Heading 1" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false" placeholder="false"/>
 <Font name="Warning" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
@@ -117,97 +117,45 @@ end proc:</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2136" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group>
-</Section>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1">Rutinas sobre Base exterior</Text-field></Title>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14" encoding="UTF-8">Base de V1\342\210\247V2 con formato concatenado</Font></Text-field></Title><Text-field style="Text" foreground="[0,128,128]" layout="Normal"><Font foreground="[0,128,128]">Rutina para realizar el producto alternante de dos lista. </Font></Text-field>
-<Group hide-output="false" labelreference="L2" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">BasisAlt_2power := proc( List1::list, List2::list ) :: list:
-   <Font bold="false" foreground="[51,204,204]">
-</Font>   local LAux:
-   LAux := [seq(seq(cat(List1[i], List2[j]), j = i+1 .. nops(List2)), i = 1 .. nops(List1))]:
-end proc:</Text-field>
-</Input>
-</Group>
-</Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14" encoding="UTF-8">Base de V1\303\227V2 (Tensor) con formato x.y</Font></Text-field></Title><Text-field style="Text" foreground="[0,128,128]" layout="Normal"><Font foreground="[0,128,128]">Rutina para realizar el producto tensorial de dos listas, devolviendo el resultado como una lista
-de symbol.symbol</Font></Text-field>
-<Group hide-input="false" hide-output="false" labelreference="L4" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">BasisTensor_2power := proc(List1::list , List2::list) ::list:<Font bold="false" foreground="[51,204,204]">
-</Font>   local LAux:
-   LAux:= [seq(seq(vv . ww, vv in List1), ww in List2)]:
-end proc:</Text-field>
-</Input>
-</Group>
-</Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14" encoding="UTF-8">Base de V1\303\227V2 (Tensor) con formato [list,list]</Font></Text-field></Title><Text-field style="Text" foreground="[0,128,128]" layout="Normal"><Font foreground="[0,128,128]">Rutina para realizar el producto tensorial de dos listas, devolviendo el resultado como una lista de listas</Font></Text-field><Text-field style="Text" foreground="[0,128,128]" layout="Normal"><Font foreground="[255,102,0]">Esta estructura es la mas comoda (hasta ahora) que se adecua para realizar posteriormente el producto interior</Font></Text-field>
-<Group hide-output="false" labelreference="L47" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">BasisTensor_2powerList := proc(List1::list , List2::list) ::list:<Font bold="false" foreground="[51,204,204]">
-</Font>   local LAux:
-   LAux:= [seq(seq([vv, ww], vv in List1), ww in List2)]
-end proc:</Text-field>
-</Input>
-</Group>
-<Group hide-input="false" hide-output="false" labelreference="L48" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
-</Input>
-</Group>
-</Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">SubSet entre dos listas</Font></Text-field></Title>
-<Group hide-output="false" labelreference="L11" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">SubSet := proc(L :: list , k::integer) ::list:
-   local LL,n,B,i:
-   n:=nops(L):
-   B:=BaseAlt(n,k): <Font bold="false" foreground="[0,128,128]"># Archivo AlgLieBasico programado por Leandro.
-</Font>   LL:=[]:
-   for i from 1 to binomial(n,k) do:
-     LL:=[op(LL),[seq(L[B[i][j]],j=1..k)]]:
-   od:
-   LL:
-end proc:</Text-field>
-</Input>
-</Group>
-</Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">Base de </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUklbXN1cEdGJDYlLUkjbWlHRiQ2KVEnJiM5MjM7RicvJSVzaXplR1EjMTRGJy8lJWJvbGRHUSV0cnVlRicvJSdpdGFsaWNHUSZmYWxzZUYnLyU2c2VsZWN0aW9uLXBsYWNlaG9sZGVyR0Y3LyUsbWF0aHZhcmlhbnRHUSVib2xkRicvJStmb250d2VpZ2h0R0Y/LUYjNiotRi82KFEia0YnRjJGNS9GOUY3L0Y+USxib2xkLWl0YWxpY0YnRkBGMkY1RkcvJStleGVjdXRhYmxlR0Y6LyUwZm9udF9zdHlsZV9uYW1lR1EqSGVhZGluZ34yRidGSEZALyUxc3VwZXJzY3JpcHRzaGlmdEdRIjBGJy1GLzYoUSJWRidGMkY1RkdGSEZARjJGNUZKRkxGPUZA">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUklbXN1cEdGJDYlLUkjbWlHRiQ2KVEnJiM5MjM7RicvJSVzaXplR1EjMTRGJy8lJWJvbGRHUSV0cnVlRicvJSdpdGFsaWNHUSZmYWxzZUYnLyU2c2VsZWN0aW9uLXBsYWNlaG9sZGVyR0Y3LyUsbWF0aHZhcmlhbnRHUSVib2xkRicvJStmb250d2VpZ2h0R0Y/LUYjNiotRi82KFEia0YnRjJGNS9GOUY3L0Y+USxib2xkLWl0YWxpY0YnRkBGMkY1RkcvJStleGVjdXRhYmxlR0Y6LyUwZm9udF9zdHlsZV9uYW1lR1EqSGVhZGluZ34yRidGSEZALyUxc3VwZXJzY3JpcHRzaGlmdEdRIjBGJy1GLzYoUSJWRidGMkY1RkdGSEZARjJGNUZKRkxGPUZA</Equation><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYtLUkjbW9HRiQ2MFEifkYnLyUlc2l6ZUdRIzE0RicvJSVib2xkR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSVib2xkRicvJStmb250d2VpZ2h0R0Y3LyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0Y8LyUpc3RyZXRjaHlHRjwvJSpzeW1tZXRyaWNHRjwvJShsYXJnZW9wR0Y8LyUubW92YWJsZWxpbWl0c0dGPC8lJ2FjY2VudEdGPC8lJ2xzcGFjZUdRJjAuMGVtRicvJSdyc3BhY2VHRkstSSNtaUdGJDYoUSRjb25GJ0YvRjIvJSdpdGFsaWNHRjxGNUY4RistRk82KFEoZm9ybWF0b0YnRi9GMkZSRjVGOEYrLUZPNihRJmNvbmNhRidGL0YyRlJGNUY4LUZPNihRJ3RlbmFkb0YnL0YwUSMxNkYnRjJGUkY1RjhGZ24vJStleGVjdXRhYmxlR0Y8LyUwZm9udF9zdHlsZV9uYW1lR1EqSGVhZGluZ34yRicvRjZRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYtLUkjbW9HRiQ2MFEifkYnLyUlc2l6ZUdRIzE0RicvJSVib2xkR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSVib2xkRicvJStmb250d2VpZ2h0R0Y3LyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0Y8LyUpc3RyZXRjaHlHRjwvJSpzeW1tZXRyaWNHRjwvJShsYXJnZW9wR0Y8LyUubW92YWJsZWxpbWl0c0dGPC8lJ2FjY2VudEdGPC8lJ2xzcGFjZUdRJjAuMGVtRicvJSdyc3BhY2VHRkstSSNtaUdGJDYoUSRjb25GJ0YvRjIvJSdpdGFsaWNHRjxGNUY4RistRk82KFEoZm9ybWF0b0YnRi9GMkZSRjVGOEYrLUZPNihRJmNvbmNhRidGL0YyRlJGNUY4LUZPNihRJ3RlbmFkb0YnL0YwUSMxNkYnRjJGUkY1RjhGZ24vJStleGVjdXRhYmxlR0Y8LyUwZm9udF9zdHlsZV9uYW1lR1EqSGVhZGluZ34yRicvRjZRJ25vcm1hbEYn</Equation></Text-field></Title><Text-field style="Text" layout="Normal">Calcula la base de la k-esima potencia exterior de List1, devolviendo una base para la misma escrita
-con la concatenacion usual usando la funcion cat.
-Es necesario que List1 sea una base ordenada para un espacio vectorial y n &lt;= nops(List1).</Text-field>
-<Group hide-output="false" labelreference="L1185" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">BasisTensor_Alt := proc(List1::list , k::integer) ::list: <Font bold="false"> 
-    </Font>local Powerlist, AuxList, i,j, cat_word, aux_word:
-    Powerlist:=[]:
-    if k&lt;=nops(List1) then
-       AuxList := SubSet(List1,k):  <Font bold="false" foreground="[255,153,0]"># Se arman los subconjuntos de la k-esima protencia exterior</Font>
-       for i from 1 to nops(AuxList) do:
-          cat_word := AuxList[i][1]:
-          for j from 2 to nops(AuxList[i]) do:
-             # aux_word := List1[i][j]:
-             cat_word := cat( cat_word, AuxList[i][j]):
-          od:
-          Powerlist := [op(Powerlist), cat_word]:
-       od:
-    fi:
-end proc:</Text-field>
-</Input>
-</Group>
-</Section>
-</Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1">Rutinas sobre Strings</Text-field></Title>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">Lista de permutaciones de un string</Font></Text-field></Title><Text-field style="Text" foreground="[0,128,128]" layout="Normal"><Font foreground="[0,128,128]"># Retorna la lista de todas las permutaciones de un strng dado</Font></Text-field>
-<Group hide-input="false" hide-output="false" labelreference="L16" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">AllPermutations := proc( s::string )
-    local    p;
-    seq( StringTools:-Permute( s, p ),
-        p = combinat[ 'permute' ]( length( s ) ) )
-end proc:</Text-field>
-</Input>
-</Group>
-</Section>
 </Section>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1">Rutinas Sobre Listas</Text-field></Title>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" size="14" layout="Heading 2"><Font size="14">Igualdad de dos Listas</Font></Text-field></Title><Text-field style="Text" layout="Normal">Retorna si dos Vectores, array o listas son iguales
+<Font opaque="true" background="[255,255,153]">Nota: Generalmente es para estructuras indexadas no tan grande
+</Font>Para evitar el tema de incompatibilidad entre array o Vector, se convierte a list</Text-field><Text-field style="Text" layout="Normal"></Text-field>
+<Group hide-output="false" labelreference="L3471" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">List_iguales := proc(E1,E2):: boolean:
+local V1, V2 :: list:
+   V1 := convert(E1, list):
+   V2 := convert(E2, list):
+
+   if V1 = V2 then return true else return false fi:
+end proc:
+</Text-field>
+</Input>
+</Group>
+</Section>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" size="14" layout="Heading 2"><Font size="14">Vectores Canonicos</Font></Text-field></Title>
+<Group labelreference="L3474" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Canonicos := proc(n) local T,R,a,i,j:
+T:=[];
+for j from 1 to n do
+    R:=[];
+    for i from 1 to n do
+      if i=j then a:=1 else a:=0 end if;
+      R:=[op(R),a];
+    od;
+    T:=[op(T),R];
+od;
+T:
+end proc:</Text-field>
+</Input>
+</Group>
+</Section>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">Remover una determinada posicion de una lista</Font></Text-field></Title><Text-field style="Text" foreground="[51,102,255]" layout="Normal"><Font foreground="[0,128,128]">Remueve determinada posicion en una lista</Font></Text-field>
-<Group hide-output="false" labelreference="L28" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group hide-output="false" labelreference="L3489" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Remove_Pos := proc(Lista::list  , pos::integer)::list:
     local AuxList:
     AuxList:=Lista:
@@ -218,23 +166,23 @@ end proc:</Text-field>
 end proc:</Text-field>
 </Input>
 </Group>
-<Group hide-input="false" hide-output="false" labelreference="L29" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group hide-input="false" hide-output="false" labelreference="L3488" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
 </Input>
 </Group>
 </Section>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">Unir dos listas</Font></Text-field></Title>
-<Group hide-output="false" labelreference="L112" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group hide-output="false" labelreference="L3480" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Merge_2_list := proc(List1::list, List2::list)::list:
      return [seq(v, v in List1), seq(v, v in List2)]:
 end proc:</Text-field>
 </Input>
 </Group>
-<Group hide-output="false" labelreference="L2144" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Group hide-output="false" labelreference="L3487" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
 </Input>
 </Group>
-<Group hide-output="false" labelreference="L2145" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group hide-output="false" labelreference="L3484" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Merge_2_list_list := proc(List1, List2)::list:
      return [seq(convert(v,list), v in List1), seq(convert(v,list), v in List2)]:
 end proc:</Text-field>
@@ -242,15 +190,15 @@ end proc:</Text-field>
 </Group>
 </Section>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">Convertir a lista una coleccion</Font></Text-field></Title>
-<Group hide-output="false" labelreference="L2150" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group hide-output="false" labelreference="L3476" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Covert_list := proc(Collec)::list:
      return [seq(convert(v,list), v in Collec)]:
 end proc:</Text-field>
 </Input>
 </Group>
 </Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">Busca un elemento en una lista</Font></Text-field></Title><Text-field style="Text" foreground="[0,128,128]" layout="Normal"><Font foreground="[0,128,128]">Busca un elemento en una lista y en caso de encontrarlo devuelve la primera posicion donde aparece</Font></Text-field>
-<Group hide-input="false" hide-output="false" labelreference="L30" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">Busca un elemento en una lista</Font></Text-field></Title><Text-field style="Text" foreground="[0,128,128]" layout="Normal"><Font foreground="[0,128,128]">Busca un elemento en una lista y en caso de encontrarlo devuelve la primera posicion donde aparece</Font></Text-field><Text-field style="Text" foreground="[0,128,128]" layout="Normal"></Text-field>
+<Group hide-input="false" hide-output="false" labelreference="L3481" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Find_Element := proc(Lista::list , element)::integer:
    local pos_result, index:
    index := 1:
@@ -268,8 +216,8 @@ end proc:</Text-field>
 </Input>
 </Group>
 </Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">Purgar de una lista un determinado elemento</Font></Text-field></Title><Text-field style="Text" layout="Normal"><Font foreground="[255,102,0]" encoding="UTF-8">Atenci\303\263n: Solo funciona para lista de lista de primitivos o lista de primitivos</Font></Text-field>
-<Group hide-output="false" labelreference="L139" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">Purgar de una lista un determinado elemento</Font></Text-field></Title><Text-field style="Text" layout="Normal"><Font foreground="[255,102,0]" encoding="UTF-8">Atenci\303\263n: Solo funciona para lista de lista de primitivos o lista de primitivos</Font></Text-field><Text-field style="Text" layout="Normal"></Text-field>
+<Group hide-output="false" labelreference="L3482" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Purge_list_2_elem := proc(Lista::list, element)::list:
    local AuxList,i:
    AuxList:=Lista:
@@ -285,11 +233,11 @@ end proc:</Text-field>
 end proc:</Text-field>
 </Input>
 </Group>
-<Group hide-output="false" labelreference="L142" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group hide-output="false" labelreference="L3477" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
 </Input>
 </Group>
-<Group hide-output="false" labelreference="L141" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group hide-output="false" labelreference="L3479" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Purge_list_2_list := proc(Obj_l , element)::list:
    local AuxList,i:
    AuxList:=[seq(convert(v,list),v in Obj_l)]:
@@ -307,7 +255,7 @@ end proc:</Text-field>
 </Group>
 </Section>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">Construir combinaciones Formales lineales</Font></Text-field></Title>
-<Group hide-input="false" hide-output="false" labelreference="L34" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group hide-input="false" hide-output="false" labelreference="L3486" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Combinacion_Formal:= proc(vec::list , Bas::list)
     local V_Formal,k,v:
     v:=0:
@@ -315,14 +263,11 @@ end proc:</Text-field>
        v:=v+vec[k]*Bas[k]:
     od:
 return v:
-end proc:    </Text-field>
+end proc:    
+</Text-field>
 </Input>
 </Group>
-<Group hide-output="false" labelreference="L137" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
-</Input>
-</Group>
-<Group hide-output="false" labelreference="L138" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group hide-output="false" labelreference="L3483" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Combinaciones_Formales:= proc(List::list , Bas::list)::list:
     local V_Formal,k,v,i:
     V_Formal:=[]:
@@ -339,12 +284,100 @@ end proc:   </Text-field>
 </Group>
 </Section>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">Multiplicar Matriz por lista y convertir a lista</Font></Text-field></Title><Text-field style="Text" foreground="[0,128,128]" layout="Normal"><Font foreground="[0,128,128]">Metodo que multiplica una matriz con una lista y devuelve el resultado como lista</Font></Text-field><Text-field style="Text" foreground="[0,128,128]" layout="Normal"><Font foreground="[0,128,128]" encoding="UTF-8">Ser\303\241 de ayuda para calcular los productos de Clebsch-Gordan.</Font></Text-field><Text-field style="Text" layout="Normal"></Text-field>
-<Group hide-output="false" labelreference="L2161" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Group hide-output="false" labelreference="L3478" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Prod_list:=proc(Matriz,lista)::list:
    local res,lt:
    lt := convert(lista,Vector[column]):
    res := Matriz.lt:
    return convert(res,list):
+end proc:</Text-field>
+</Input>
+</Group>
+</Section>
+</Section>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1">Formatos de Base exterior y Tensores</Text-field></Title>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14" encoding="UTF-8">Base de V1\342\210\247V2 concatenada</Font></Text-field></Title><Text-field style="Text" foreground="[0,128,128]" layout="Normal"><Font foreground="[0,128,128]">Rutina para realizar el producto alternante de dos listas, devolviendo como resultado una lista concatenada</Font></Text-field><Text-field style="Text" foreground="[0,128,128]" layout="Normal"></Text-field>
+<Group hide-output="false" labelreference="L2" drawlabel="true" applyint="true" applyrational="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Basis_of_Alt := proc(List1::list, List2::list) :: list:<Font bold="false" foreground="[51,204,204]">
+</Font>   local LAux:
+   LAux := [seq(seq(cat(List1[i], List2[j]), j = i+1 .. nops(List2)), i = 1 .. nops(List1))]:
+end proc:</Text-field>
+</Input>
+</Group>
+</Section>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14" encoding="UTF-8">Base {x.y} del tensor V1\303\227V2</Font></Text-field></Title><Text-field style="Text" foreground="[0,128,128]" layout="Normal"><Font foreground="[0,128,128]">Rutina para realizar el producto tensorial de dos listas, devolviendo como resultado una lista de sym.sym</Font></Text-field><Text-field style="Text" foreground="[0,128,128]" layout="Normal"></Text-field>
+<Group hide-input="false" hide-output="false" labelreference="L4" drawlabel="true" applyint="true" applyrational="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Basis_of_TensorC := proc(List1::list, List2::list) ::list:<Font bold="false" foreground="[51,204,204]">
+</Font>   local LAux:
+   LAux:= [seq(seq(vv . ww, vv in List1), ww in List2)]:
+end proc:</Text-field>
+</Input>
+</Group>
+</Section>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14" encoding="UTF-8">Base {[x,y]} del tensor V1\303\227V2</Font></Text-field></Title><Text-field style="Text" foreground="[0,128,128]" layout="Normal"><Font foreground="[0,128,128]">Rutina para realizar el producto tensorial de dos listas, devolviendo como resultado una lista de [xi,yj]</Font></Text-field><Text-field style="Text" foreground="[0,128,128]" layout="Normal"></Text-field>
+<Group hide-output="false" labelreference="L47" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Basis_of_TensorL := proc(List1::list , List2::list) ::list:<Font bold="false" foreground="[51,204,204]">
+</Font>   local LAux:
+   LAux:= [seq(seq([vv, ww], vv in List1), ww in List2)]
+end proc:</Text-field>
+</Input>
+</Group>
+</Section>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">Base Alternante de una lista</Font></Text-field></Title><Text-field style="Text" foreground="[255,153,0]" layout="Normal"><Font foreground="[255,153,0]">Rutina auxiliar para invocar en &quot;BasisAlt_of_list&quot;</Font></Text-field><Text-field style="Text" layout="Normal">Retorna la k-base alternante de una lista L = [v1,...vn] con formato de lista de listas. </Text-field><Text-field style="Text" layout="Normal">La lista de coordenadas (de longitud k) representa un vector base de la k-esima potencia exterior</Text-field><Text-field style="Text" layout="Normal"></Text-field>
+<Group hide-output="false" labelreference="L3491" drawlabel="true" applyint="true" applyrational="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">BasisAlt_of_L := proc(L :: list , k::integer) ::list:
+   local LL,n,B,i:
+   n:=nops(L):
+   B:=BaseAlt(n,k): <Font bold="false" foreground="[0,128,128]"># Archivo AlgLieBasico.
+</Font>   LL:=[]:
+   for i from 1 to binomial(n,k) do:
+     LL:=[op(LL),[seq(L[B[i][j]],j=1..k)]]:
+   od:
+   LL:
+end proc:</Text-field>
+</Input>
+</Group>
+</Section>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">Base Alternante concatenada de una lista</Font></Text-field></Title><Text-field style="Text" layout="Normal">Retorna la k-base alternante de una lista L = [v1,...vn] con formato de lista de concatenaciones
+Es necesario que L sea una base ordenada de un espacio vectorial y que n no sea mayor que la</Text-field><Text-field style="Text" layout="Normal">longitud de la lista, es decir, n &lt;= nops(L).</Text-field><Text-field style="Text" layout="Normal"></Text-field>
+<Group hide-output="false" labelreference="L1185" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">BasisAlt_of_list := proc(L::list , k::integer) ::list: <Font bold="false"> 
+    </Font>local Powerlist, AuxList, i,j, cat_word, aux_word:
+    Powerlist := []:
+    if k &lt;= nops(L) then:
+
+       AuxList := BasisAlt_of_L(L,k):
+
+       for i from 1 to nops(AuxList) do:
+          cat_word := AuxList[i][1]:
+          for j from 2 to nops(AuxList[i]) do:
+             cat_word := cat( cat_word, AuxList[i][j]):
+          od:
+          Powerlist := [op(Powerlist), cat_word]:
+       od:
+    fi:
+end proc:
+</Text-field>
+</Input>
+</Group>
+<Group hide-input="false" labelreference="L3493" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Font opaque="true" background="[255,255,153]" foreground="[255,153,0]"># Ejempo de los dos metodos anteriores</Font>
+BasisAlt_of_L([v1,v2,v3],2);
+BasisAlt_of_list([v1,v2,v3],2);</Text-field>
+</Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkobWZlbmNlZEc2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUklbXJvd0dGJDYqLUYjNiYtRiw2KC1JI21pR0YkNiVRI3YxRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEiLEYnL0Y6USdub3JtYWxGJy8lJmZlbmNlR1EmZmFsc2VGJy8lKnNlcGFyYXRvckdGOC8lKXN0cmV0Y2h5R0ZELyUqc3ltbWV0cmljR0ZELyUobGFyZ2VvcEdGRC8lLm1vdmFibGVsaW1pdHNHRkQvJSdhY2NlbnRHRkQvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR1EsMC4zMzMzMzMzZW1GJy1GMzYlUSN2MkYnRjZGOS8lK2ZvcmVncm91bmRHUShbMCwwLDBdRicvJSlyZWFkb25seUdGREZARkAvJSVvcGVuR1EnJmxzcWI7RicvJSZjbG9zZUdRJyZyc3FiO0YnRjwtRiM2Ji1GLDYoRjJGPC1GMzYlUSN2M0YnRjZGOUZaRmduRkBGQEZpbkZcb0Y8LUYjNiYtRiw2KEZXRjxGY29GWkZnbkZARkBGaW5GXG9GWkZnbkZARkBGaW5GXG8=">NyU3JEkjdjFHNiJJI3YyR0YlNyRGJEkjdjNHRiU3JEYmRig=</Equation></Text-field>
+</Output>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkobWZlbmNlZEc2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUklbXJvd0dGJDYqLUkjbWlHRiQ2JVEldjF2MkYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RIixGJy9GNlEnbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRjQvJSlzdHJldGNoeUdGQC8lKnN5bW1ldHJpY0dGQC8lKGxhcmdlb3BHRkAvJS5tb3ZhYmxlbGltaXRzR0ZALyUnYWNjZW50R0ZALyUnbHNwYWNlR1EmMC4wZW1GJy8lJ3JzcGFjZUdRLDAuMzMzMzMzM2VtRictRi82JVEldjF2M0YnRjJGNUY4LUYvNiVRJXYydjNGJ0YyRjUvJStmb3JlZ3JvdW5kR1EoWzAsMCwwXUYnLyUpcmVhZG9ubHlHRkBGPEY8LyUlb3BlbkdRJyZsc3FiO0YnLyUmY2xvc2VHUScmcnNxYjtGJw==">NyVJJXYxdjJHNiJJJXYxdjNHRiRJJXYydjNHRiQ=</Equation></Text-field>
+</Output>
+</Group>
+</Section>
+</Section>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1">Rutinas sobre Strings</Text-field></Title>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">Lista de permutaciones de un string</Font></Text-field></Title><Text-field style="Text" foreground="[0,128,128]" layout="Normal"><Font foreground="[0,128,128]">Retorna la lista de todas las permutaciones de un string dado</Font></Text-field><Text-field style="Text" foreground="[0,128,128]" layout="Normal"></Text-field>
+<Group hide-input="false" hide-output="false" labelreference="L16" drawlabel="true" applyint="true" applyrational="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Permutations_of_String := proc(s) local p,ss:
+   ss := convert(s,string):
+   seq( StringTools:-Permute(ss, p), p=combinat['permute'](length(ss))):
 end proc:</Text-field>
 </Input>
 </Group>
@@ -619,7 +652,7 @@ end proc:</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2127" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2132" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -641,7 +674,7 @@ end proc:</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2131" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2133" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -747,7 +780,7 @@ end proc:</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1174" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1175" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -821,7 +854,7 @@ end proc:</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1160" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1162" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -865,7 +898,7 @@ end proc:</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1165" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1166" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -911,7 +944,7 @@ end proc:</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1167" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1168" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -944,13 +977,13 @@ estructura de Base Exterior otorgada por BaseExt().
    local i, j, w_res, e_b1, e_b2, index_c, w_aux, dim_lleg_1, dim_lleg_2, B_lleg:
    local B_FT_1, B_FT_2:
 
-   B_FT_1 := BasisTensor_2powerList(BE[k1], BE[k2]):
-   B_FT_2 := BasisTensor_2powerList(BE[k3], BE[k4]):
+   B_FT_1 := Basis_of_TensorL(BE[k1], BE[k2]):
+   B_FT_2 := Basis_of_TensorL(BE[k3], BE[k4]):
 
    dim_lleg_1 := binomial(dimV,k1+k3):
    dim_lleg_2 := binomial(dimV,k2+k4):
 
-   B_lleg := BasisTensor_2powerList(BE[k1+k3], BE[k2+k4]):
+   B_lleg := Basis_of_TensorL(BE[k1+k3], BE[k2+k4]):
 
    w_res := convert(Vector(1 .. (dim_lleg_1 * dim_lleg_2), 0), Array): <Font foreground="[255,102,0]"># Coordenadas del cup resultante.
 </Font>
@@ -975,7 +1008,7 @@ end proc:</Text-field>
 </Input>
 </Group>
 </Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" size="14" layout="Heading 2"><Font size="14">Cup product de un elemento de </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUklbXN1cEdGJDYlLUkjbWlHRiQ2KFEqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJWJvbGRHUSV0cnVlRicvJSdpdGFsaWNHUSZmYWxzZUYnLyUsbWF0aHZhcmlhbnRHUSVib2xkRicvJStmb250d2VpZ2h0R0Y9LUYjNictSSNtb0dGJDYwUSIqRidGMkY1RjtGPi8lJmZlbmNlR0Y6LyUqc2VwYXJhdG9yR0Y6LyUpc3RyZXRjaHlHRjovJSpzeW1tZXRyaWNHRjovJShsYXJnZW9wR0Y6LyUubW92YWJsZWxpbWl0c0dGOi8lJ2FjY2VudEdGOi8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlZGMkY1RjtGPi8lMXN1cGVyc2NyaXB0c2hpZnRHUSIwRictRi82KFEieEYnRjJGNUY4RjtGPi1GQzYwUSJ+RidGMkY1RjtGPkZGRkhGSkZMRk5GUEZSL0ZVUSYwLjBlbUYnL0ZYRl1vRi5GMkY1RjtGPg==">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUklbXN1cEdGJDYlLUkjbWlHRiQ2KFEqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJWJvbGRHUSV0cnVlRicvJSdpdGFsaWNHUSZmYWxzZUYnLyUsbWF0aHZhcmlhbnRHUSVib2xkRicvJStmb250d2VpZ2h0R0Y9LUYjNictSSNtb0dGJDYwUSIqRidGMkY1RjtGPi8lJmZlbmNlR0Y6LyUqc2VwYXJhdG9yR0Y6LyUpc3RyZXRjaHlHRjovJSpzeW1tZXRyaWNHRjovJShsYXJnZW9wR0Y6LyUubW92YWJsZWxpbWl0c0dGOi8lJ2FjY2VudEdGOi8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlZGMkY1RjtGPi8lMXN1cGVyc2NyaXB0c2hpZnRHUSIwRictRi82KFEieEYnRjJGNUY4RjtGPi1GQzYwUSJ+RidGMkY1RjtGPkZGRkhGSkZMRk5GUEZSL0ZVUSYwLjBlbUYnL0ZYRl1vRi5GMkY1RjtGPg==</Equation><Font size="14">  y un elemento de </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYsLUklbXN1cEdGJDYlLUkjbWlHRiQ2KFEqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJWJvbGRHUSV0cnVlRicvJSdpdGFsaWNHUSZmYWxzZUYnLyUsbWF0aHZhcmlhbnRHUSVib2xkRicvJStmb250d2VpZ2h0R0Y9LUYjNictSSNtb0dGJDYwUSIqRidGMkY1RjtGPi8lJmZlbmNlR0Y6LyUqc2VwYXJhdG9yR0Y6LyUpc3RyZXRjaHlHRjovJSpzeW1tZXRyaWNHRjovJShsYXJnZW9wR0Y6LyUubW92YWJsZWxpbWl0c0dGOi8lJ2FjY2VudEdGOi8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlZGMkY1RjtGPi8lMXN1cGVyc2NyaXB0c2hpZnRHUSIwRictRkM2LlEifkYnRjIvRjxRJ25vcm1hbEYnRkZGSEZKRkxGTkZQRlIvRlVRJjAuMGVtRicvRlhGXG8tRi82KFEib0YnRjJGNUY4RjtGPi1GQzYwRmhuRjJGNUY7Rj5GRkZIRkpGTEZORlBGUkZbb0Zdb0Zhby1GLzYoUSgmIzkyMztWRidGMkY1RjhGO0Y+RjJGNUY7Rj4=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYsLUklbXN1cEdGJDYlLUkjbWlHRiQ2KFEqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJWJvbGRHUSV0cnVlRicvJSdpdGFsaWNHUSZmYWxzZUYnLyUsbWF0aHZhcmlhbnRHUSVib2xkRicvJStmb250d2VpZ2h0R0Y9LUYjNictSSNtb0dGJDYwUSIqRidGMkY1RjtGPi8lJmZlbmNlR0Y6LyUqc2VwYXJhdG9yR0Y6LyUpc3RyZXRjaHlHRjovJSpzeW1tZXRyaWNHRjovJShsYXJnZW9wR0Y6LyUubW92YWJsZWxpbWl0c0dGOi8lJ2FjY2VudEdGOi8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlZGMkY1RjtGPi8lMXN1cGVyc2NyaXB0c2hpZnRHUSIwRictRkM2LlEifkYnRjIvRjxRJ25vcm1hbEYnRkZGSEZKRkxGTkZQRlIvRlVRJjAuMGVtRicvRlhGXG8tRi82KFEib0YnRjJGNUY4RjtGPi1GQzYwRmhuRjJGNUY7Rj5GRkZIRkpGTEZORlBGUkZbb0Zdb0Zhby1GLzYoUSgmIzkyMztWRidGMkY1RjhGO0Y+RjJGNUY7Rj4=</Equation><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYnLUkjbWlHRiQ2I1EhRicvJSVzaXplR1EjMTRGJy8lJWJvbGRHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJWJvbGRGJy8lK2ZvbnR3ZWlnaHRHRjc=">JSFH</Equation></Text-field></Title><Text-field style="Text" layout="Normal"><Font foreground="[0,128,128]">Realiza el producto copa entre un elementos FormT_1 de </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYpLUklbXN1cEdGJDYlLUkjbWlHRiQ2J1EqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJ2l0YWxpY0dRJmZhbHNlRicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictRiM2Ji1JI21vR0YkNi9RIipGJ0YyRjhGOy8lJmZlbmNlR0Y3LyUqc2VwYXJhdG9yR0Y3LyUpc3RyZXRjaHlHRjcvJSpzeW1tZXRyaWNHRjcvJShsYXJnZW9wR0Y3LyUubW92YWJsZWxpbWl0c0dGNy8lJ2FjY2VudEdGNy8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlRGMkY4RjsvJTFzdXBlcnNjcmlwdHNoaWZ0R1EiMEYnLUYvNidRInhGJ0YyRjVGOEY7LUZBNi9RIn5GJ0YyRjhGO0ZERkZGSEZKRkxGTkZQL0ZTUSYwLjBlbUYnL0ZWRltvRi5GMkY4Rjs=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYpLUklbXN1cEdGJDYlLUkjbWlHRiQ2J1EqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJ2l0YWxpY0dRJmZhbHNlRicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictRiM2Ji1JI21vR0YkNi9RIipGJ0YyRjhGOy8lJmZlbmNlR0Y3LyUqc2VwYXJhdG9yR0Y3LyUpc3RyZXRjaHlHRjcvJSpzeW1tZXRyaWNHRjcvJShsYXJnZW9wR0Y3LyUubW92YWJsZWxpbWl0c0dGNy8lJ2FjY2VudEdGNy8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlRGMkY4RjsvJTFzdXBlcnNjcmlwdHNoaWZ0R1EiMEYnLUYvNidRInhGJ0YyRjVGOEY7LUZBNi9RIn5GJ0YyRjhGO0ZERkZGSEZKRkxGTkZQL0ZTUSYwLjBlbUYnL0ZWRltvRi5GMkY4Rjs=</Equation><Font foreground="[0,128,128]"> y un elemento FormT_2 de </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUklbXN1cEdGJDYlLUkjbWlHRiQ2J1EqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJ2l0YWxpY0dRJmZhbHNlRicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictRiM2JS1JI21vR0YkNi9RIipGJ0YyRjhGOy8lJmZlbmNlR0Y3LyUqc2VwYXJhdG9yR0Y3LyUpc3RyZXRjaHlHRjcvJSpzeW1tZXRyaWNHRjcvJShsYXJnZW9wR0Y3LyUubW92YWJsZWxpbWl0c0dGNy8lJ2FjY2VudEdGNy8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlRGOEY7LyUxc3VwZXJzY3JpcHRzaGlmdEdRIjBGJy1GLzYjUSFGJ0Y4Rjs=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUklbXN1cEdGJDYlLUkjbWlHRiQ2J1EqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJ2l0YWxpY0dRJmZhbHNlRicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictRiM2JS1JI21vR0YkNi9RIipGJ0YyRjhGOy8lJmZlbmNlR0Y3LyUqc2VwYXJhdG9yR0Y3LyUpc3RyZXRjaHlHRjcvJSpzeW1tZXRyaWNHRjcvJShsYXJnZW9wR0Y3LyUubW92YWJsZWxpbWl0c0dGNy8lJ2FjY2VudEdGNy8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlRGOEY7LyUxc3VwZXJzY3JpcHRzaGlmdEdRIjBGJy1GLzYjUSFGJ0Y4Rjs=</Equation><Font foreground="[0,128,128]"> o </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbW9HRiQ2L1EifkYnLyUlc2l6ZUdRIzE0RicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRjovJSlzdHJldGNoeUdGOi8lKnN5bW1ldHJpY0dGOi8lKGxhcmdlb3BHRjovJS5tb3ZhYmxlbGltaXRzR0Y6LyUnYWNjZW50R0Y6LyUnbHNwYWNlR1EmMC4wZW1GJy8lJ3JzcGFjZUdGSS1JI21pR0YkNidRKCYjOTIzO1ZGJ0YvLyUnaXRhbGljR0Y6RjJGNUY1">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbW9HRiQ2L1EifkYnLyUlc2l6ZUdRIzE0RicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRjovJSlzdHJldGNoeUdGOi8lKnN5bW1ldHJpY0dGOi8lKGxhcmdlb3BHRjovJS5tb3ZhYmxlbGltaXRzR0Y6LyUnYWNjZW50R0Y6LyUnbHNwYWNlR1EmMC4wZW1GJy8lJ3JzcGFjZUdGSS1JI21pR0YkNidRKCYjOTIzO1ZGJ0YvLyUnaXRhbGljR0Y6RjJGNUY1</Equation><Font foreground="[0,128,128]">
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" size="14" layout="Heading 2"><Font size="14">Cup product de un elemento de </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUklbXN1cEdGJDYlLUkjbWlHRiQ2KFEqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJWJvbGRHUSV0cnVlRicvJSdpdGFsaWNHUSZmYWxzZUYnLyUsbWF0aHZhcmlhbnRHUSVib2xkRicvJStmb250d2VpZ2h0R0Y9LUYjNictSSNtb0dGJDYwUSIqRidGMkY1RjtGPi8lJmZlbmNlR0Y6LyUqc2VwYXJhdG9yR0Y6LyUpc3RyZXRjaHlHRjovJSpzeW1tZXRyaWNHRjovJShsYXJnZW9wR0Y6LyUubW92YWJsZWxpbWl0c0dGOi8lJ2FjY2VudEdGOi8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlZGMkY1RjtGPi8lMXN1cGVyc2NyaXB0c2hpZnRHUSIwRictRi82KFEieEYnRjJGNUY4RjtGPi1GQzYwUSJ+RidGMkY1RjtGPkZGRkhGSkZMRk5GUEZSL0ZVUSYwLjBlbUYnL0ZYRl1vRi5GMkY1RjtGPg==">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUklbXN1cEdGJDYlLUkjbWlHRiQ2KFEqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJWJvbGRHUSV0cnVlRicvJSdpdGFsaWNHUSZmYWxzZUYnLyUsbWF0aHZhcmlhbnRHUSVib2xkRicvJStmb250d2VpZ2h0R0Y9LUYjNictSSNtb0dGJDYwUSIqRidGMkY1RjtGPi8lJmZlbmNlR0Y6LyUqc2VwYXJhdG9yR0Y6LyUpc3RyZXRjaHlHRjovJSpzeW1tZXRyaWNHRjovJShsYXJnZW9wR0Y6LyUubW92YWJsZWxpbWl0c0dGOi8lJ2FjY2VudEdGOi8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlZGMkY1RjtGPi8lMXN1cGVyc2NyaXB0c2hpZnRHUSIwRictRi82KFEieEYnRjJGNUY4RjtGPi1GQzYwUSJ+RidGMkY1RjtGPkZGRkhGSkZMRk5GUEZSL0ZVUSYwLjBlbUYnL0ZYRl1vRi5GMkY1RjtGPg==</Equation><Font size="14">  y un elemento de </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYsLUklbXN1cEdGJDYlLUkjbWlHRiQ2KFEqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJWJvbGRHUSV0cnVlRicvJSdpdGFsaWNHUSZmYWxzZUYnLyUsbWF0aHZhcmlhbnRHUSVib2xkRicvJStmb250d2VpZ2h0R0Y9LUYjNictSSNtb0dGJDYwUSIqRidGMkY1RjtGPi8lJmZlbmNlR0Y6LyUqc2VwYXJhdG9yR0Y6LyUpc3RyZXRjaHlHRjovJSpzeW1tZXRyaWNHRjovJShsYXJnZW9wR0Y6LyUubW92YWJsZWxpbWl0c0dGOi8lJ2FjY2VudEdGOi8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlZGMkY1RjtGPi8lMXN1cGVyc2NyaXB0c2hpZnRHUSIwRictRkM2LlEifkYnRjIvRjxRJ25vcm1hbEYnRkZGSEZKRkxGTkZQRlIvRlVRJjAuMGVtRicvRlhGXG8tRi82KFEib0YnRjJGNUY4RjtGPi1GQzYwRmhuRjJGNUY7Rj5GRkZIRkpGTEZORlBGUkZbb0Zdb0Zhby1GLzYoUSgmIzkyMztWRidGMkY1RjhGO0Y+RjJGNUY7Rj4=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYsLUklbXN1cEdGJDYlLUkjbWlHRiQ2KFEqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJWJvbGRHUSV0cnVlRicvJSdpdGFsaWNHUSZmYWxzZUYnLyUsbWF0aHZhcmlhbnRHUSVib2xkRicvJStmb250d2VpZ2h0R0Y9LUYjNictSSNtb0dGJDYwUSIqRidGMkY1RjtGPi8lJmZlbmNlR0Y6LyUqc2VwYXJhdG9yR0Y6LyUpc3RyZXRjaHlHRjovJSpzeW1tZXRyaWNHRjovJShsYXJnZW9wR0Y6LyUubW92YWJsZWxpbWl0c0dGOi8lJ2FjY2VudEdGOi8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlZGMkY1RjtGPi8lMXN1cGVyc2NyaXB0c2hpZnRHUSIwRictRkM2LlEifkYnRjIvRjxRJ25vcm1hbEYnRkZGSEZKRkxGTkZQRlIvRlVRJjAuMGVtRicvRlhGXG8tRi82KFEib0YnRjJGNUY4RjtGPi1GQzYwRmhuRjJGNUY7Rj5GRkZIRkpGTEZORlBGUkZbb0Zdb0Zhby1GLzYoUSgmIzkyMztWRidGMkY1RjhGO0Y+RjJGNUY7Rj4=</Equation><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYnLUkjbWlHRiQ2I1EhRicvJSVzaXplR1EjMTRGJy8lJWJvbGRHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJWJvbGRGJy8lK2ZvbnR3ZWlnaHRHRjc=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field></Title><Text-field style="Text" layout="Normal"><Font foreground="[0,128,128]">Realiza el producto copa entre un elementos FormT_1 de </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYpLUklbXN1cEdGJDYlLUkjbWlHRiQ2J1EqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJ2l0YWxpY0dRJmZhbHNlRicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictRiM2Ji1JI21vR0YkNi9RIipGJ0YyRjhGOy8lJmZlbmNlR0Y3LyUqc2VwYXJhdG9yR0Y3LyUpc3RyZXRjaHlHRjcvJSpzeW1tZXRyaWNHRjcvJShsYXJnZW9wR0Y3LyUubW92YWJsZWxpbWl0c0dGNy8lJ2FjY2VudEdGNy8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlRGMkY4RjsvJTFzdXBlcnNjcmlwdHNoaWZ0R1EiMEYnLUYvNidRInhGJ0YyRjVGOEY7LUZBNi9RIn5GJ0YyRjhGO0ZERkZGSEZKRkxGTkZQL0ZTUSYwLjBlbUYnL0ZWRltvRi5GMkY4Rjs=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYpLUklbXN1cEdGJDYlLUkjbWlHRiQ2J1EqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJ2l0YWxpY0dRJmZhbHNlRicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictRiM2Ji1JI21vR0YkNi9RIipGJ0YyRjhGOy8lJmZlbmNlR0Y3LyUqc2VwYXJhdG9yR0Y3LyUpc3RyZXRjaHlHRjcvJSpzeW1tZXRyaWNHRjcvJShsYXJnZW9wR0Y3LyUubW92YWJsZWxpbWl0c0dGNy8lJ2FjY2VudEdGNy8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlRGMkY4RjsvJTFzdXBlcnNjcmlwdHNoaWZ0R1EiMEYnLUYvNidRInhGJ0YyRjVGOEY7LUZBNi9RIn5GJ0YyRjhGO0ZERkZGSEZKRkxGTkZQL0ZTUSYwLjBlbUYnL0ZWRltvRi5GMkY4Rjs=</Equation><Font foreground="[0,128,128]"> y un elemento FormT_2 de </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUklbXN1cEdGJDYlLUkjbWlHRiQ2J1EqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJ2l0YWxpY0dRJmZhbHNlRicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictRiM2JS1JI21vR0YkNi9RIipGJ0YyRjhGOy8lJmZlbmNlR0Y3LyUqc2VwYXJhdG9yR0Y3LyUpc3RyZXRjaHlHRjcvJSpzeW1tZXRyaWNHRjcvJShsYXJnZW9wR0Y3LyUubW92YWJsZWxpbWl0c0dGNy8lJ2FjY2VudEdGNy8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlRGOEY7LyUxc3VwZXJzY3JpcHRzaGlmdEdRIjBGJy1GLzYjUSFGJ0Y4Rjs=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUklbXN1cEdGJDYlLUkjbWlHRiQ2J1EqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJ2l0YWxpY0dRJmZhbHNlRicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictRiM2JS1JI21vR0YkNi9RIipGJ0YyRjhGOy8lJmZlbmNlR0Y3LyUqc2VwYXJhdG9yR0Y3LyUpc3RyZXRjaHlHRjcvJSpzeW1tZXRyaWNHRjcvJShsYXJnZW9wR0Y3LyUubW92YWJsZWxpbWl0c0dGNy8lJ2FjY2VudEdGNy8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlRGOEY7LyUxc3VwZXJzY3JpcHRzaGlmdEdRIjBGJy1GLzYjUSFGJ0Y4Rjs=</Equation><Font foreground="[0,128,128]"> o </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbW9HRiQ2L1EifkYnLyUlc2l6ZUdRIzE0RicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRjovJSlzdHJldGNoeUdGOi8lKnN5bW1ldHJpY0dGOi8lKGxhcmdlb3BHRjovJS5tb3ZhYmxlbGltaXRzR0Y6LyUnYWNjZW50R0Y6LyUnbHNwYWNlR1EmMC4wZW1GJy8lJ3JzcGFjZUdGSS1JI21pR0YkNidRKCYjOTIzO1ZGJ0YvLyUnaXRhbGljR0Y6RjJGNUY1">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbW9HRiQ2L1EifkYnLyUlc2l6ZUdRIzE0RicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRjovJSlzdHJldGNoeUdGOi8lKnN5bW1ldHJpY0dGOi8lKGxhcmdlb3BHRjovJS5tb3ZhYmxlbGltaXRzR0Y6LyUnYWNjZW50R0Y6LyUnbHNwYWNlR1EmMC4wZW1GJy8lJ3JzcGFjZUdGSS1JI21pR0YkNidRKCYjOTIzO1ZGJ0YvLyUnaXRhbGljR0Y6RjJGNUY1</Equation><Font foreground="[0,128,128]">
 </Font></Text-field>
 <Group hide-output="false" labelreference="L1193" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input>
@@ -986,17 +1019,17 @@ end proc:</Text-field>
    local i, j, w_res, e_b1, e_b2, index_c, w_aux, dim_lleg_1, dim_lleg_2, B_lleg:
    local B_FT_1, B_FT_2:
 
-   B_FT_1 := BasisTensor_2powerList(BE[k1], BE[k2]):
+   B_FT_1 := Basis_of_TensorL(BE[k1], BE[k2]):
    B_FT_2 := BE[k3]:
 
    if band = true then:
       dim_lleg_1 := binomial(dimV,k1+k3):
       dim_lleg_2 := binomial(dimV,k2):
-      B_lleg := BasisTensor_2powerList(BE[k1+k3], BE[k2]):
+      B_lleg := Basis_of_TensorL(BE[k1+k3], BE[k2]):
    else:
       dim_lleg_1 := binomial(dimV,k1):
       dim_lleg_2 := binomial(dimV,k2+k3):
-      B_lleg := BasisTensor_2powerList(BE[k1], BE[k2+k3]):
+      B_lleg := Basis_of_TensorL(BE[k1], BE[k2+k3]):
    fi:
 
    w_res := convert(Vector(1 .. (dim_lleg_1 * dim_lleg_2), 0), Array): <Font foreground="[255,102,0]"># Coordenadas del cup resultante.
@@ -1022,7 +1055,7 @@ end proc:</Text-field>
 </Input>
 </Group>
 </Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" size="14" layout="Heading 2"><Font size="14">Cup product de un elemento de </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUklbXN1cEdGJDYlLUkjbWlHRiQ2KFEqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJWJvbGRHUSV0cnVlRicvJSdpdGFsaWNHUSZmYWxzZUYnLyUsbWF0aHZhcmlhbnRHUSVib2xkRicvJStmb250d2VpZ2h0R0Y9LUYjNiUtSSNtb0dGJDYwUSIqRidGMkY1RjtGPi8lJmZlbmNlR0Y6LyUqc2VwYXJhdG9yR0Y6LyUpc3RyZXRjaHlHRjovJSpzeW1tZXRyaWNHRjovJShsYXJnZW9wR0Y6LyUubW92YWJsZWxpbWl0c0dGOi8lJ2FjY2VudEdGOi8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlZGMi9GPFEnbm9ybWFsRicvJTFzdXBlcnNjcmlwdHNoaWZ0R1EiMEYnLUZDNjBRIn5GJ0YyRjVGO0Y+RkZGSEZKRkxGTkZQRlIvRlVRJjAuMGVtRicvRlhGXG8tRi82KFEib0YnRjJGNUY4RjtGPkZobkZobi1GLzYoUSgmIzkyMztWRidGMkY1RjhGO0Y+RjJGWQ==">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUklbXN1cEdGJDYlLUkjbWlHRiQ2KFEqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJWJvbGRHUSV0cnVlRicvJSdpdGFsaWNHUSZmYWxzZUYnLyUsbWF0aHZhcmlhbnRHUSVib2xkRicvJStmb250d2VpZ2h0R0Y9LUYjNiUtSSNtb0dGJDYwUSIqRidGMkY1RjtGPi8lJmZlbmNlR0Y6LyUqc2VwYXJhdG9yR0Y6LyUpc3RyZXRjaHlHRjovJSpzeW1tZXRyaWNHRjovJShsYXJnZW9wR0Y6LyUubW92YWJsZWxpbWl0c0dGOi8lJ2FjY2VudEdGOi8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlZGMi9GPFEnbm9ybWFsRicvJTFzdXBlcnNjcmlwdHNoaWZ0R1EiMEYnLUZDNjBRIn5GJ0YyRjVGO0Y+RkZGSEZKRkxGTkZQRlIvRlVRJjAuMGVtRicvRlhGXG8tRi82KFEib0YnRjJGNUY4RjtGPkZobkZobi1GLzYoUSgmIzkyMztWRidGMkY1RjhGO0Y+RjJGWQ==</Equation><Font size="14">  y un elemento de </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUklbXN1cEdGJDYlLUkjbWlHRiQ2KFEqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJWJvbGRHUSV0cnVlRicvJSdpdGFsaWNHUSZmYWxzZUYnLyUsbWF0aHZhcmlhbnRHUSVib2xkRicvJStmb250d2VpZ2h0R0Y9LUYjNiUtSSNtb0dGJDYwUSIqRidGMkY1RjtGPi8lJmZlbmNlR0Y6LyUqc2VwYXJhdG9yR0Y6LyUpc3RyZXRjaHlHRjovJSpzeW1tZXRyaWNHRjovJShsYXJnZW9wR0Y6LyUubW92YWJsZWxpbWl0c0dGOi8lJ2FjY2VudEdGOi8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlZGMi9GPFEnbm9ybWFsRicvJTFzdXBlcnNjcmlwdHNoaWZ0R1EiMEYnLUYvNihRInhGJ0YyRjVGOEY7Rj4tRkM2MFEifkYnRjJGNUY7Rj5GRkZIRkpGTEZORlBGUi9GVVEmMC4wZW1GJy9GWEZfb0YuRjJGWQ==">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUklbXN1cEdGJDYlLUkjbWlHRiQ2KFEqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJWJvbGRHUSV0cnVlRicvJSdpdGFsaWNHUSZmYWxzZUYnLyUsbWF0aHZhcmlhbnRHUSVib2xkRicvJStmb250d2VpZ2h0R0Y9LUYjNiUtSSNtb0dGJDYwUSIqRidGMkY1RjtGPi8lJmZlbmNlR0Y6LyUqc2VwYXJhdG9yR0Y6LyUpc3RyZXRjaHlHRjovJSpzeW1tZXRyaWNHRjovJShsYXJnZW9wR0Y6LyUubW92YWJsZWxpbWl0c0dGOi8lJ2FjY2VudEdGOi8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlZGMi9GPFEnbm9ybWFsRicvJTFzdXBlcnNjcmlwdHNoaWZ0R1EiMEYnLUYvNihRInhGJ0YyRjVGOEY7Rj4tRkM2MFEifkYnRjJGNUY7Rj5GRkZIRkpGTEZORlBGUi9GVVEmMC4wZW1GJy9GWEZfb0YuRjJGWQ==</Equation></Text-field></Title><Text-field style="Text" layout="Normal"><Font foreground="[0,128,128]">Realiza el producto copa entre un elementos FormT_1 de </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYnLUklbXN1cEdGJDYlLUkjbWlHRiQ2J1EqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJ2l0YWxpY0dRJmZhbHNlRicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictRiM2Ji1JI21vR0YkNi9RIipGJ0YyRjhGOy8lJmZlbmNlR0Y3LyUqc2VwYXJhdG9yR0Y3LyUpc3RyZXRjaHlHRjcvJSpzeW1tZXRyaWNHRjcvJShsYXJnZW9wR0Y3LyUubW92YWJsZWxpbWl0c0dGNy8lJ2FjY2VudEdGNy8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlRGMkY4RjsvJTFzdXBlcnNjcmlwdHNoaWZ0R1EiMEYnLUZBNi9RIn5GJ0YyRjhGO0ZERkZGSEZKRkxGTkZQL0ZTUSYwLjBlbUYnL0ZWRmhuRjJGOEY7">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYnLUklbXN1cEdGJDYlLUkjbWlHRiQ2J1EqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJ2l0YWxpY0dRJmZhbHNlRicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictRiM2Ji1JI21vR0YkNi9RIipGJ0YyRjhGOy8lJmZlbmNlR0Y3LyUqc2VwYXJhdG9yR0Y3LyUpc3RyZXRjaHlHRjcvJSpzeW1tZXRyaWNHRjcvJShsYXJnZW9wR0Y3LyUubW92YWJsZWxpbWl0c0dGNy8lJ2FjY2VudEdGNy8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlRGMkY4RjsvJTFzdXBlcnNjcmlwdHNoaWZ0R1EiMEYnLUZBNi9RIn5GJ0YyRjhGO0ZERkZGSEZKRkxGTkZQL0ZTUSYwLjBlbUYnL0ZWRmhuRjJGOEY7</Equation><Font foreground="[0,128,128]">o </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYnLUklbXN1cEdGJDYlLUkjbWlHRiQ2J1EqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJ2l0YWxpY0dRJmZhbHNlRicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictRiM2Ji1GLzYjUSFGJ0YyRjhGOy8lMXN1cGVyc2NyaXB0c2hpZnRHUSIwRictSSNtb0dGJDYvUSJ+RidGMkY4RjsvJSZmZW5jZUdGNy8lKnNlcGFyYXRvckdGNy8lKXN0cmV0Y2h5R0Y3LyUqc3ltbWV0cmljR0Y3LyUobGFyZ2VvcEdGNy8lLm1vdmFibGVsaW1pdHNHRjcvJSdhY2NlbnRHRjcvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR0ZaRjJGOEY7">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYnLUklbXN1cEdGJDYlLUkjbWlHRiQ2J1EqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJ2l0YWxpY0dRJmZhbHNlRicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictRiM2Ji1GLzYjUSFGJ0YyRjhGOy8lMXN1cGVyc2NyaXB0c2hpZnRHUSIwRictSSNtb0dGJDYvUSJ+RidGMkY4RjsvJSZmZW5jZUdGNy8lKnNlcGFyYXRvckdGNy8lKXN0cmV0Y2h5R0Y3LyUqc3ltbWV0cmljR0Y3LyUobGFyZ2VvcEdGNy8lLm1vdmFibGVsaW1pdHNHRjcvJSdhY2NlbnRHRjcvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR0ZaRjJGOEY7</Equation><Font foreground="[0,128,128]"> y un elemento FormT_2 de </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUklbXN1cEdGJDYlLUkjbWlHRiQ2J1EqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJ2l0YWxpY0dRJmZhbHNlRicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictRiM2JS1JI21vR0YkNi9RIipGJ0YyRjhGOy8lJmZlbmNlR0Y3LyUqc2VwYXJhdG9yR0Y3LyUpc3RyZXRjaHlHRjcvJSpzeW1tZXRyaWNHRjcvJShsYXJnZW9wR0Y3LyUubW92YWJsZWxpbWl0c0dGNy8lJ2FjY2VudEdGNy8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlRGOEY7LyUxc3VwZXJzY3JpcHRzaGlmdEdRIjBGJy1GLzYoUSJ4RidGMkY1RjgvJTBmb250X3N0eWxlX25hbWVHUSkyRH5JbnB1dEYnRjstRkE2MFEifkYnRjJGOEZnbkY7RkRGRkZIRkpGTEZORlAvRlNRJjAuMGVtRicvRlZGXm8tRi82KFEoJiM5MjM7VkYnRjJGNUY4RmduRjtGOEY7">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUklbXN1cEdGJDYlLUkjbWlHRiQ2J1EqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJ2l0YWxpY0dRJmZhbHNlRicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictRiM2JS1JI21vR0YkNi9RIipGJ0YyRjhGOy8lJmZlbmNlR0Y3LyUqc2VwYXJhdG9yR0Y3LyUpc3RyZXRjaHlHRjcvJSpzeW1tZXRyaWNHRjcvJShsYXJnZW9wR0Y3LyUubW92YWJsZWxpbWl0c0dGNy8lJ2FjY2VudEdGNy8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlRGOEY7LyUxc3VwZXJzY3JpcHRzaGlmdEdRIjBGJy1GLzYoUSJ4RidGMkY1RjgvJTBmb250X3N0eWxlX25hbWVHUSkyRH5JbnB1dEYnRjstRkE2MFEifkYnRjJGOEZnbkY7RkRGRkZIRkpGTEZORlAvRlNRJjAuMGVtRicvRlZGXm8tRi82KFEoJiM5MjM7VkYnRjJGNUY4RmduRjtGOEY7</Equation><Font foreground="[0,128,128]"> </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYkLUkjbWlHRiQ2I1EhRicvJSxtYXRodmFyaWFudEdRJ25vcm1hbEYn">JSFH</Equation><Font foreground="[0,128,128]">
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" size="14" layout="Heading 2"><Font size="14">Cup product de un elemento de </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUklbXN1cEdGJDYlLUkjbWlHRiQ2KFEqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJWJvbGRHUSV0cnVlRicvJSdpdGFsaWNHUSZmYWxzZUYnLyUsbWF0aHZhcmlhbnRHUSVib2xkRicvJStmb250d2VpZ2h0R0Y9LUYjNiUtSSNtb0dGJDYwUSIqRidGMkY1RjtGPi8lJmZlbmNlR0Y6LyUqc2VwYXJhdG9yR0Y6LyUpc3RyZXRjaHlHRjovJSpzeW1tZXRyaWNHRjovJShsYXJnZW9wR0Y6LyUubW92YWJsZWxpbWl0c0dGOi8lJ2FjY2VudEdGOi8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlZGMi9GPFEnbm9ybWFsRicvJTFzdXBlcnNjcmlwdHNoaWZ0R1EiMEYnLUZDNjBRIn5GJ0YyRjVGO0Y+RkZGSEZKRkxGTkZQRlIvRlVRJjAuMGVtRicvRlhGXG8tRi82KFEib0YnRjJGNUY4RjtGPkZobkZobi1GLzYoUSgmIzkyMztWRidGMkY1RjhGO0Y+RjJGWQ==">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYqLUklbXN1cEdGJDYlLUkjbWlHRiQ2KFEqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJWJvbGRHUSV0cnVlRicvJSdpdGFsaWNHUSZmYWxzZUYnLyUsbWF0aHZhcmlhbnRHUSVib2xkRicvJStmb250d2VpZ2h0R0Y9LUYjNiUtSSNtb0dGJDYwUSIqRidGMkY1RjtGPi8lJmZlbmNlR0Y6LyUqc2VwYXJhdG9yR0Y6LyUpc3RyZXRjaHlHRjovJSpzeW1tZXRyaWNHRjovJShsYXJnZW9wR0Y6LyUubW92YWJsZWxpbWl0c0dGOi8lJ2FjY2VudEdGOi8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlZGMi9GPFEnbm9ybWFsRicvJTFzdXBlcnNjcmlwdHNoaWZ0R1EiMEYnLUZDNjBRIn5GJ0YyRjVGO0Y+RkZGSEZKRkxGTkZQRlIvRlVRJjAuMGVtRicvRlhGXG8tRi82KFEib0YnRjJGNUY4RjtGPkZobkZobi1GLzYoUSgmIzkyMztWRidGMkY1RjhGO0Y+RjJGWQ==</Equation><Font size="14">  y un elemento de </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUklbXN1cEdGJDYlLUkjbWlHRiQ2KFEqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJWJvbGRHUSV0cnVlRicvJSdpdGFsaWNHUSZmYWxzZUYnLyUsbWF0aHZhcmlhbnRHUSVib2xkRicvJStmb250d2VpZ2h0R0Y9LUYjNiUtSSNtb0dGJDYwUSIqRidGMkY1RjtGPi8lJmZlbmNlR0Y6LyUqc2VwYXJhdG9yR0Y6LyUpc3RyZXRjaHlHRjovJSpzeW1tZXRyaWNHRjovJShsYXJnZW9wR0Y6LyUubW92YWJsZWxpbWl0c0dGOi8lJ2FjY2VudEdGOi8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlZGMi9GPFEnbm9ybWFsRicvJTFzdXBlcnNjcmlwdHNoaWZ0R1EiMEYnLUYvNihRInhGJ0YyRjVGOEY7Rj4tRkM2MFEifkYnRjJGNUY7Rj5GRkZIRkpGTEZORlBGUi9GVVEmMC4wZW1GJy9GWEZfb0YuRjJGWQ==">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUklbXN1cEdGJDYlLUkjbWlHRiQ2KFEqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJWJvbGRHUSV0cnVlRicvJSdpdGFsaWNHUSZmYWxzZUYnLyUsbWF0aHZhcmlhbnRHUSVib2xkRicvJStmb250d2VpZ2h0R0Y9LUYjNiUtSSNtb0dGJDYwUSIqRidGMkY1RjtGPi8lJmZlbmNlR0Y6LyUqc2VwYXJhdG9yR0Y6LyUpc3RyZXRjaHlHRjovJSpzeW1tZXRyaWNHRjovJShsYXJnZW9wR0Y6LyUubW92YWJsZWxpbWl0c0dGOi8lJ2FjY2VudEdGOi8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlZGMi9GPFEnbm9ybWFsRicvJTFzdXBlcnNjcmlwdHNoaWZ0R1EiMEYnLUYvNihRInhGJ0YyRjVGOEY7Rj4tRkM2MFEifkYnRjJGNUY7Rj5GRkZIRkpGTEZORlBGUi9GVVEmMC4wZW1GJy9GWEZfb0YuRjJGWQ==</Equation></Text-field></Title><Text-field style="Text" layout="Normal"><Font foreground="[0,128,128]">Realiza el producto copa entre un elementos FormT_1 de </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYnLUklbXN1cEdGJDYlLUkjbWlHRiQ2J1EqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJ2l0YWxpY0dRJmZhbHNlRicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictRiM2Ji1JI21vR0YkNi9RIipGJ0YyRjhGOy8lJmZlbmNlR0Y3LyUqc2VwYXJhdG9yR0Y3LyUpc3RyZXRjaHlHRjcvJSpzeW1tZXRyaWNHRjcvJShsYXJnZW9wR0Y3LyUubW92YWJsZWxpbWl0c0dGNy8lJ2FjY2VudEdGNy8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlRGMkY4RjsvJTFzdXBlcnNjcmlwdHNoaWZ0R1EiMEYnLUZBNi9RIn5GJ0YyRjhGO0ZERkZGSEZKRkxGTkZQL0ZTUSYwLjBlbUYnL0ZWRmhuRjJGOEY7">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYnLUklbXN1cEdGJDYlLUkjbWlHRiQ2J1EqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJ2l0YWxpY0dRJmZhbHNlRicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictRiM2Ji1JI21vR0YkNi9RIipGJ0YyRjhGOy8lJmZlbmNlR0Y3LyUqc2VwYXJhdG9yR0Y3LyUpc3RyZXRjaHlHRjcvJSpzeW1tZXRyaWNHRjcvJShsYXJnZW9wR0Y3LyUubW92YWJsZWxpbWl0c0dGNy8lJ2FjY2VudEdGNy8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlRGMkY4RjsvJTFzdXBlcnNjcmlwdHNoaWZ0R1EiMEYnLUZBNi9RIn5GJ0YyRjhGO0ZERkZGSEZKRkxGTkZQL0ZTUSYwLjBlbUYnL0ZWRmhuRjJGOEY7</Equation><Font foreground="[0,128,128]">o </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYnLUklbXN1cEdGJDYlLUkjbWlHRiQ2J1EqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJ2l0YWxpY0dRJmZhbHNlRicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictRiM2Ji1GLzYjUSFGJ0YyRjhGOy8lMXN1cGVyc2NyaXB0c2hpZnRHUSIwRictSSNtb0dGJDYvUSJ+RidGMkY4RjsvJSZmZW5jZUdGNy8lKnNlcGFyYXRvckdGNy8lKXN0cmV0Y2h5R0Y3LyUqc3ltbWV0cmljR0Y3LyUobGFyZ2VvcEdGNy8lLm1vdmFibGVsaW1pdHNHRjcvJSdhY2NlbnRHRjcvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR0ZaRjJGOEY7">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYnLUklbXN1cEdGJDYlLUkjbWlHRiQ2J1EqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJ2l0YWxpY0dRJmZhbHNlRicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictRiM2Ji1GLzYjUSFGJ0YyRjhGOy8lMXN1cGVyc2NyaXB0c2hpZnRHUSIwRictSSNtb0dGJDYvUSJ+RidGMkY4RjsvJSZmZW5jZUdGNy8lKnNlcGFyYXRvckdGNy8lKXN0cmV0Y2h5R0Y3LyUqc3ltbWV0cmljR0Y3LyUobGFyZ2VvcEdGNy8lLm1vdmFibGVsaW1pdHNHRjcvJSdhY2NlbnRHRjcvJSdsc3BhY2VHUSYwLjBlbUYnLyUncnNwYWNlR0ZaRjJGOEY7</Equation><Font foreground="[0,128,128]"> y un elemento FormT_2 de </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUklbXN1cEdGJDYlLUkjbWlHRiQ2J1EqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJ2l0YWxpY0dRJmZhbHNlRicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictRiM2JS1JI21vR0YkNi9RIipGJ0YyRjhGOy8lJmZlbmNlR0Y3LyUqc2VwYXJhdG9yR0Y3LyUpc3RyZXRjaHlHRjcvJSpzeW1tZXRyaWNHRjcvJShsYXJnZW9wR0Y3LyUubW92YWJsZWxpbWl0c0dGNy8lJ2FjY2VudEdGNy8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlRGOEY7LyUxc3VwZXJzY3JpcHRzaGlmdEdRIjBGJy1GLzYoUSJ4RidGMkY1RjgvJTBmb250X3N0eWxlX25hbWVHUSkyRH5JbnB1dEYnRjstRkE2MFEifkYnRjJGOEZnbkY7RkRGRkZIRkpGTEZORlAvRlNRJjAuMGVtRicvRlZGXm8tRi82KFEoJiM5MjM7VkYnRjJGNUY4RmduRjtGOEY7">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUklbXN1cEdGJDYlLUkjbWlHRiQ2J1EqJkxhbWJkYTtWRicvJSVzaXplR1EjMTRGJy8lJ2l0YWxpY0dRJmZhbHNlRicvJStmb3JlZ3JvdW5kR1EsWzAsMTI4LDEyOF1GJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRictRiM2JS1JI21vR0YkNi9RIipGJ0YyRjhGOy8lJmZlbmNlR0Y3LyUqc2VwYXJhdG9yR0Y3LyUpc3RyZXRjaHlHRjcvJSpzeW1tZXRyaWNHRjcvJShsYXJnZW9wR0Y3LyUubW92YWJsZWxpbWl0c0dGNy8lJ2FjY2VudEdGNy8lJ2xzcGFjZUdRLDAuMTY2NjY2N2VtRicvJSdyc3BhY2VHRlRGOEY7LyUxc3VwZXJzY3JpcHRzaGlmdEdRIjBGJy1GLzYoUSJ4RidGMkY1RjgvJTBmb250X3N0eWxlX25hbWVHUSkyRH5JbnB1dEYnRjstRkE2MFEifkYnRjJGOEZnbkY7RkRGRkZIRkpGTEZORlAvRlNRJjAuMGVtRicvRlZGXm8tRi82KFEoJiM5MjM7VkYnRjJGNUY4RmduRjtGOEY7</Equation><Font foreground="[0,128,128]"> </Font><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYkLUkjbWlHRiQ2I1EhRicvJSxtYXRodmFyaWFudEdRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation><Font foreground="[0,128,128]">
 </Font></Text-field>
 <Group hide-output="false" labelreference="L1198" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input>
@@ -1034,16 +1067,16 @@ end proc:</Text-field>
    local B_FT_1, B_FT_2:
 
    B_FT_1 := BE[k1]:
-   B_FT_2 := BasisTensor_2powerList(BE[k2], BE[k3]):
+   B_FT_2 := Basis_of_TensorL(BE[k2], BE[k3]):
 
    if band = true then:
       dim_lleg_1 := binomial(dimV,k1+k2):
       dim_lleg_2 := binomial(dimV,k3):
-      B_lleg := BasisTensor_2powerList(BE[k1+k2], BE[k3]):
+      B_lleg := Basis_of_TensorL(BE[k1+k2], BE[k3]):
    else:
       dim_lleg_1 := binomial(dimV,k2):
       dim_lleg_2 := binomial(dimV,k1+k3):
-      B_lleg := BasisTensor_2powerList(BE[k2], BE[k1+k3]):
+      B_lleg := Basis_of_TensorL(BE[k2], BE[k1+k3]):
    fi:
 
    w_res := convert(Vector(1 .. (dim_lleg_1 * dim_lleg_2), 0), Array): <Font foreground="[255,102,0]"># Coordenadas del cup resultante.
@@ -1199,7 +1232,7 @@ dim_lleg := dim1*dim2:
 coord_res := convert(Vector(1 .. (dim_lleg), 0), Array):
 
 if k1 &lt;&gt; 0 and k2 &lt;&gt; 0 then:
-   B_lleg := BasisTensor_2powerList(BE[k1-1], BE[k2-1]):
+   B_lleg := Basis_of_TensorL(BE[k1-1], BE[k2-1]):
    for ii from 1 to k1 do:
       p_aux := eval_Pois_1([v1[ii]],v2):
       if p_aux[2] &lt;&gt; 0 then: <Font foreground="[255,153,0]"># Se pregunta si el producto es cero</Font>
@@ -1424,7 +1457,7 @@ cup_nt_nt_BE(BExt, vv3 ,vv4 , 1, 0, 0, 1, 4);</Font></Text-field>
 </Group>
 <Group hide-input="false" hide-output="false" labelreference="L2266" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" foreground="[51,153,102]" layout="Normal"><Font foreground="[51,153,102]">Poi1 := Poiss_t_nt(BExt, [2,3], true, [[1],[2]], 4);
-Combinacion_Formal(Poi1, BasisTensor_2power(BExt[2],BExt[0]));</Font></Text-field>
+Combinacion_Formal(Poi1, Basis_of_TensorC(BExt[2],BExt[0]));</Font></Text-field>
 </Input>
 <Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVElUG9pMUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RKSZBc3NpZ247RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0Y9LyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSdyc3BhY2VHRkwtSShtZmVuY2VkR0YkNiYtRiM2MC1JI21uR0YkNiRRIjBGJ0Y5LUY2Ni1RIixGJ0Y5RjsvRj9GMUZARkJGREZGRkgvRktRJjAuMGVtRicvRk5RLDAuMzMzMzMzM2VtRictRlU2JFErJnVtaW51czA7MUYnRjlGWEZURlhGVEZYRlRGWEZULyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lKXJlYWRvbmx5R0Y9RjlGOS8lJW9wZW5HUScmbHNxYjtGJy8lJmNsb3NlR1EnJnJzcWI7RidGOQ==">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSVQb2kxR0YoNygiIiEhIiJGL0YvRi9GLzcjRi4=</Equation></Text-field>
 </Output>
@@ -1433,7 +1466,7 @@ Combinacion_Formal(Poi1, BasisTensor_2power(BExt[2],BExt[0]));</Font></Text-fiel
 </Group>
 <Group hide-input="false" hide-output="false" labelreference="L2267" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" foreground="[51,153,102]" layout="Normal"><Font foreground="[51,153,102]">Poi2 := Poiss_nt_nt(BExt, [[3],[1]], [[1],[3]] , 4);
-Combinacion_Formal(Poi2, BasisTensor_2power(BExt[1],BExt[1]));</Font></Text-field>
+Combinacion_Formal(Poi2, Basis_of_TensorC(BExt[1],BExt[1]));</Font></Text-field>
 </Input>
 <Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVElUG9pMkYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RKSZBc3NpZ247RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0Y9LyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSdyc3BhY2VHRkwtSShtZmVuY2VkR0YkNiYtRiM2RC1JI21uR0YkNiRRKyZ1bWludXMwOzFGJ0Y5LUY2Ni1RIixGJ0Y5RjsvRj9GMUZARkJGREZGRkgvRktRJjAuMGVtRicvRk5RLDAuMzMzMzMzM2VtRictRlU2JFEiMEYnRjlGWEZqbkZYRmpuRlhGam5GWEZqbkZYRmpuRlhGam5GWEZqbkZYRmpuRlgtRlU2JFEiMUYnRjlGWEZqbkZYRmpuRlhGam5GWEZqbkZYRmpuLyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lKXJlYWRvbmx5R0Y9RjlGOS8lJW9wZW5HUScmbHNxYjtGJy8lJmNsb3NlR1EnJnJzcWI7RidGOQ==">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSVQb2kyR0YoNzIhIiIiIiFGMEYwRjBGMEYwRjBGMEYwIiIiRjBGMEYwRjBGMDcjRi4=</Equation></Text-field>
 </Output>
@@ -1442,7 +1475,7 @@ Combinacion_Formal(Poi2, BasisTensor_2power(BExt[1],BExt[1]));</Font></Text-fiel
 </Group>
 <Group hide-input="false" hide-output="false" labelreference="L2270" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" foreground="[51,153,102]" layout="Normal"><Font foreground="[51,153,102]">Poi3 := Poiss_t_nt(BExt, [2,3], false, [[2],[1,2]], 4);
-Combinacion_Formal(Poi3, BasisTensor_2power(BExt[0],BExt[3]));</Font></Text-field>
+Combinacion_Formal(Poi3, Basis_of_TensorC(BExt[0],BExt[3]));</Font></Text-field>
 </Input>
 <Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVElUG9pM0YnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RKSZBc3NpZ247RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0Y9LyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSdyc3BhY2VHRkwtSShtZmVuY2VkR0YkNiYtRiM2LC1JI21uR0YkNiRRKyZ1bWludXMwOzFGJ0Y5LUY2Ni1RIixGJ0Y5RjsvRj9GMUZARkJGREZGRkgvRktRJjAuMGVtRicvRk5RLDAuMzMzMzMzM2VtRictRlU2JFEiMEYnRjlGWEZqbkZYRmpuLyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lKXJlYWRvbmx5R0Y9RjlGOS8lJW9wZW5HUScmbHNxYjtGJy8lJmNsb3NlR1EnJnJzcWI7RidGOQ==">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSVQb2kzR0YoNyYhIiIiIiFGMEYwNyNGLg==</Equation></Text-field>
 </Output>
@@ -1466,13 +1499,13 @@ sign_aux := 1:
 
 <Font foreground="[51,102,255]">if k1 &lt;&gt; 0 and k2 &lt;&gt; 0 and k3 &lt;&gt; 0 and k4 &lt;&gt; 0 then:</Font>
 
-   B_FT_1 := BasisTensor_2powerList(BE[k1], BE[k2]):
-   B_FT_2 := BasisTensor_2powerList(BE[k3], BE[k4]):
+   B_FT_1 := Basis_of_TensorL(BE[k1], BE[k2]):
+   B_FT_2 := Basis_of_TensorL(BE[k3], BE[k4]):
 
    dim_lleg_1 := binomial(dimV,k1+k3-1):
    dim_lleg_2 := binomial(dimV,k2+k4-1):
 
-   B_lleg := BasisTensor_2powerList(BE[k1+k3-1], BE[k2+k4-1]):
+   B_lleg := Basis_of_TensorL(BE[k1+k3-1], BE[k2+k4-1]):
    poiss_res := convert(Vector(1 .. (dim_lleg_1 * dim_lleg_2), 0), Array):
 
    for ii from 1 to nops(FT_1) do:
@@ -1491,13 +1524,13 @@ sign_aux := 1:
 
 <Font foreground="[51,102,255]">elif k1 &lt;&gt; 0 and k2 &lt;&gt; 0 and k3 &lt;&gt; 0 and k4 = 0 then:</Font> 
 
-   B_FT_1 := BasisTensor_2powerList(BE[k1], BE[k2]):
+   B_FT_1 := Basis_of_TensorL(BE[k1], BE[k2]):
    B_FT_2 := BE[k3]:
 
    dim_lleg_1 := binomial(dimV,k1+k3-1):
    dim_lleg_2 := binomial(dimV,k2-1):
 
-   B_lleg := BasisTensor_2powerList(BE[k1+k3-1], BE[k2-1]):
+   B_lleg := Basis_of_TensorL(BE[k1+k3-1], BE[k2-1]):
    poiss_res := convert(Vector(1 .. (dim_lleg_1 * dim_lleg_2), 0), Array):
 
    sign_aux := (-1)^((k1+k2)*k3+1):
@@ -1518,13 +1551,13 @@ sign_aux := 1:
 
 <Font foreground="[51,102,255]">elif k1 &lt;&gt; 0 and k2 &lt;&gt; 0 and k3 = 0 and k4 &lt;&gt; 0 then: </Font>
 
-   B_FT_1 := BasisTensor_2powerList(BE[k1], BE[k2]):
+   B_FT_1 := Basis_of_TensorL(BE[k1], BE[k2]):
    B_FT_2 := BE[k4]:
 
    dim_lleg_1 := binomial(dimV,k1-1):
    dim_lleg_2 := binomial(dimV,k2+k4-1):
 
-   B_lleg := BasisTensor_2powerList(BE[k1-1], BE[k2+k4-1]):
+   B_lleg := Basis_of_TensorL(BE[k1-1], BE[k2+k4-1]):
    poiss_res := convert(Vector(1 .. (dim_lleg_1 * dim_lleg_2), 0), Array):
 
    sign_aux := (-1)^((k1+k2)*k4+1):
@@ -1546,12 +1579,12 @@ sign_aux := 1:
 <Font foreground="[51,102,255]">elif k1 &lt;&gt; 0 and k2 = 0 and k3 &lt;&gt; 0 and k4 &lt;&gt; 0 then:</Font> 
 
    B_FT_1 := BE[k1]:
-   B_FT_2 := BasisTensor_2powerList(BE[k3], BE[k4]):
+   B_FT_2 := Basis_of_TensorL(BE[k3], BE[k4]):
 
    dim_lleg_1 := binomial(dimV,k1+k3-1):
    dim_lleg_2 := binomial(dimV,k4-1):
 
-   B_lleg := BasisTensor_2powerList(BE[k1+k3-1], BE[k4-1]):
+   B_lleg := Basis_of_TensorL(BE[k1+k3-1], BE[k4-1]):
    poiss_res := convert(Vector(1 .. (dim_lleg_1 * dim_lleg_2), 0), Array):
 
    for ii from 1 to nops(FT_1) do:
@@ -1571,12 +1604,12 @@ sign_aux := 1:
 <Font foreground="[51,102,255]">elif k1 = 0 and k2 &lt;&gt; 0 and k3 &lt;&gt; 0 and k4 &lt;&gt; 0 then: </Font>
 
    B_FT_1 := BE[k2]:
-   B_FT_2 := BasisTensor_2powerList(BE[k3], BE[k4]):
+   B_FT_2 := Basis_of_TensorL(BE[k3], BE[k4]):
 
    dim_lleg_1 := binomial(dimV,k3-1):
    dim_lleg_2 := binomial(dimV,k2+k4-1):
 
-   B_lleg := BasisTensor_2powerList(BE[k3-1], BE[k2+k4-1]):
+   B_lleg := Basis_of_TensorL(BE[k3-1], BE[k2+k4-1]):
    poiss_res := convert(Vector(1 .. (dim_lleg_1 * dim_lleg_2), 0), Array):
 
    for ii from 1 to nops(FT_1) do:
@@ -1601,7 +1634,7 @@ sign_aux := 1:
    dim_lleg_1 := binomial(dimV,k1-1):
    dim_lleg_2 := binomial(dimV,k4-1):
 
-   B_lleg := BasisTensor_2powerList(BE[k1-1], BE[k4-1]):
+   B_lleg := Basis_of_TensorL(BE[k1-1], BE[k4-1]):
    poiss_res := convert(Vector(1 .. (dim_lleg_1 * dim_lleg_2), 0), Array):
 
    for ii from 1 to nops(FT_1) do:
@@ -1626,7 +1659,7 @@ sign_aux := 1:
    dim_lleg_1 := binomial(dimV,k2-1):
    dim_lleg_2 := binomial(dimV,k3-1):
 
-   B_lleg := BasisTensor_2powerList(BE[k2-1], BE[k3-1]):
+   B_lleg := Basis_of_TensorL(BE[k2-1], BE[k3-1]):
    poiss_res := convert(Vector(1 .. (dim_lleg_1 * dim_lleg_2), 0), Array):
 
    for ii from 1 to nops(FT_1) do:
@@ -1693,9 +1726,9 @@ end proc:
 </Group>
 </Section>
 </Section>
-<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1">Rutinas para algebras cuadraticas</Text-field></Title><Text-field style="Text" foreground="[51,102,255]" layout="Normal"><Font foreground="[51,102,255]">Estos metodos son exclusicamente para algebras de Lie del tipo cuadratica. Se requiere previamente el calculo de </Font></Text-field><Text-field style="Text" foreground="[51,102,255]" layout="Normal"><Font foreground="[51,102,255]">la forma bilineal invariante no degenerada </Font></Text-field>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1">Rutinas para algebras Cuadraticas</Text-field></Title><Text-field style="Text" foreground="[51,102,255]" layout="Normal"><Font foreground="[51,102,255]">Estos metodos son exclusicamente para algebras de Lie del tipo cuadratica. Se requiere previamente el calculo de </Font></Text-field><Text-field style="Text" foreground="[51,102,255]" layout="Normal"><Font foreground="[51,102,255]">la forma bilineal invariante no degenerada </Font></Text-field>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1">Forma bilineal invariante</Text-field></Title>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">Evaluar</Font><Font size="12"> </Font></Text-field></Title>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">Evaluar</Font><Font size="12"> </Font></Text-field></Title>
 <Group hide-output="false" labelreference="L2296" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Font foreground="[255,153,0]"># Evalua la forma bilineal Bil_F sobre dos vectores Vec1, Vec2 que representan
 # las coordenadas de dos elementos sobre L en la base definida</Font>
@@ -1768,13 +1801,13 @@ end proc:
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Coord_2_Form := proc(Bil_M,T,BE)
 local Res, e_aux, b_pos, b_ele, ii, jj, kk, bas, bas2, N:
 bas := BE[1]:
-bas2 := BasisTensor_2power(BE[1],BE[1]);
+bas2 := Basis_of_TensorC(BE[1],BE[1]);
 N := nops(bas):
 Res := convert(Vector(1 .. N^2, 0), list): <Font foreground="[153,204,0]"># Coordenadas de la 2-Forma</Font>
 for ii from 1 to N do:
    for jj from 1 to N do:
       e_aux := Eval_Bil_b(bas[ii],bas[jj],Bil_M):
-      b_ele := bas[ii].bas[jj]: <Font foreground="[153,204,0]"># Respeta la estructura de datos de BasisTensor_2power</Font>
+      b_ele := bas[ii].bas[jj]: <Font foreground="[153,204,0]"># Respeta la estructura de datos de Basis_of_TensorC</Font>
       b_pos := Find_Element(bas2,b_ele):
       if b_pos &lt;&gt; -1 then Res[b_pos] := Res[b_pos] + e_aux fi:
    od:
@@ -1784,7 +1817,7 @@ end proc:</Text-field>
 </Input>
 </Group>
 </Section>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">Bracket auxiliar</Font></Text-field></Title>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">Bracket auxiliar</Font></Text-field></Title>
 <Group hide-output="false" labelreference="L2289" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Brak_aux := proc(u,v,T) local i,j,k,d,w;
 d := nops(convert(u,list)):
@@ -1801,7 +1834,7 @@ end proc:</Text-field>
 </Input>
 </Group>
 </Section>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">3-Forma Alternate asociada </Font></Text-field></Title>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">3-Forma Alternate asociada </Font></Text-field></Title>
 <Group hide-output="false" labelreference="L2295" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Font foreground="[255,153,0]"># Evalua la 3-forma alternante asociada a Bil_M sobre tres vectores Vec1, Vec2, Vec3
 # que representan las coordenadas de tres vectores en la base de L</Font>
@@ -1847,7 +1880,7 @@ end proc:
 </Input>
 </Group>
 </Section>
-<Section collapsed="false" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">Corchete de Super-Poisson asociado</Font></Text-field></Title>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2"><Font size="14">Corchete de Super-Poisson asociado</Font></Text-field></Title>
 <Group hide-output="false" labelreference="L2297" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Poisson_Bracket := proc(Form1, Form2, k1, k2, Bil_M, BE)
 local bas, Bbas, ii, jj, ev_aux, ip_1, ip_2, w_aux, N, Res:
@@ -1925,12 +1958,8 @@ return Res:
 end proc:</Text-field>
 </Input>
 </Group>
-<Group labelreference="L2298" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
-</Input>
-</Group>
 <Group labelreference="L2300" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"></Text-field>
 </Input>
 </Group>
 </Section>

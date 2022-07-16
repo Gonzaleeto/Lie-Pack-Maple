@@ -1,0 +1,1155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Worksheet>
+<Version major="2018" minor="0"/>
+<Label-Scheme value="2" prefix=""/>
+<View-Properties presentation="true" autoexpanding_sections="true" UserProfileName="Maple Default Profile" NumericFormat-ApplyInteger="true" NumericFormat-ApplyRational="true" NumericFormat-ApplyExponent="false" editable="true">
+</View-Properties>
+<MapleNet-Properties prettyprint="3" warnlevel="3" preplot="" helpbrowser="standard" displayprecision="-1" echo="1" unitattributes="&quot;fontweight&quot; = &quot;bold&quot;" imaginaryunit="I" longdelim="true" elisiontermsthreshold="10000" elisiondigitsafter="100" elisiondigitsbefore="100" plotdevice="inline" errorbreak="1" plotoptions="" plotdriver="opengl" quiet="false" elisiontermsbefore="100" elisiontermsafter="100" screenwidth="79" indentamount="4" plotoutput="terminal" screenpixelheight="768" rtablesize="infinity" useclientjvm="true" labelwidth="20" postplot="" typesetting="extended" ansi="false" elisiondigitsthreshold="10000" showassumed="1" errorcursor="false" labelling="true" screenheight="25" prompt="&gt; " verboseproc="1" latexwidth="8.0" ShowLabels="true"/>
+<Styles>
+<Font name="Heading 1" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Warning" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="2D Output" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Heading 4" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="true" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Line Printed Output" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Heading 2" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="16" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Maple Output" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="2D Inert Output" background="[255,255,255]" bold="false" executable="true" family="Times New Roman" foreground="[144,144,144]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Heading 3" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="true" opaque="false" readonly="false" size="14" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Diagnostic" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[40,120,40]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Ordered List 1" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Maple Input" background="[255,255,255]" bold="true" executable="true" family="Courier New" foreground="[120,0,14]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Text Output" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Ordered List 2" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Ordered List 3" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Ordered List 4" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Ordered List 5" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Annotation Title" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Header and Footer" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="10" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="HyperlinkError" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[255,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="Atomic Variable" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[175,0,175]" italic="true" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="HyperlinkWarning" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[0,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="Dictionary Hyperlink" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[147,0,15]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="2D Math" background="[255,255,255]" bold="false" executable="true" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Bullet Item" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Maple Plot" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Annotation Text" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="List Item" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Dash Item" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="2D Input" background="[255,255,255]" bold="false" executable="true" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Error" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[255,0,255]" italic="false" opaque="false" readonly="true" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Title" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="18" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Text" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Normal" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Caption Reference" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Code" background="[255,255,255]" bold="false" executable="false" family="Courier New" foreground="[255,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Maple Input Placeholder" background="[255,255,255]" bold="true" executable="true" family="Courier New" foreground="[200,0,200]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="true"/>
+<Font name="Equation Label" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Author" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Font name="Hyperlink" background="[255,255,255]" bold="false" executable="false" family="Times New Roman" foreground="[0,128,128]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="true" placeholder="false"/>
+<Font name="Caption Text" background="[255,255,255]" bold="true" executable="false" family="Times New Roman" foreground="[0,0,0]" italic="false" opaque="false" readonly="false" size="12" subscript="false" superscript="false" underline="false" placeholder="false"/>
+<Layout name="Heading 1" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="4" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Warning" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Heading 4" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Line Printed Output" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="any" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Heading 2" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="2" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Maple Output" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.3" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Heading 3" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Diagnostic" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="any" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Ordered List 1" alignment="left" bullet="numeric" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix=""/>
+<Layout name="Text Output" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="newline" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Ordered List 2" alignment="left" bullet="alphabetic" firstindent="0" leftmargin="36" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix=""/>
+<Layout name="Ordered List 3" alignment="left" bullet="roman" firstindent="0" leftmargin="72" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix=""/>
+<Layout name="Ordered List 4" alignment="left" bullet="ALPHABETIC" firstindent="0" leftmargin="108" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix=""/>
+<Layout name="Ordered List 5" alignment="left" bullet="ROMAN" firstindent="0" leftmargin="144" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="-1" bulletsuffix=""/>
+<Layout name="Annotation Title" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="12" spacebelow="12" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="HyperlinkError" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="HyperlinkWarning" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Bullet Item" alignment="left" bullet="dot" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Maple Plot" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="List Item" alignment="left" bullet="indent" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Dash Item" alignment="left" bullet="dash" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="3" spacebelow="3" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Error" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Title" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="12" spacebelow="12" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Normal" alignment="left" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="0" spacebelow="0" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Layout name="Author" alignment="centred" bullet="none" firstindent="0" leftmargin="0" rightmargin="0" linespacing="0.0" spaceabove="8" spacebelow="8" linebreak="space" pagebreak-before="false" initial="0" bulletsuffix=""/>
+<Pencil-style name="Pencil 1" pen-color="[0,0,0]" pen-height="1.0" pen-width="1.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 2" pen-color="[0,0,255]" pen-height="1.0" pen-width="1.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 3" pen-color="[0,0,0]" pen-height="3.0" pen-width="3.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 4" pen-color="[0,0,255]" pen-height="3.0" pen-width="3.0" pen-opacity="1.0"/>
+<Pencil-style name="Pencil 5" pen-color="[255,0,0]" pen-height="5.0" pen-width="5.0" pen-opacity="1.0"/>
+<Highlighter-style name="Highlighter 5" pen-color="[255,255,0]" pen-height="48.0" pen-width="48.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 3" pen-color="[51,255,0]" pen-height="24.0" pen-width="24.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 4" pen-color="[0,255,255]" pen-height="32.0" pen-width="32.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 1" pen-color="[255,153,255]" pen-height="12.0" pen-width="8.0" pen-opacity="0.8"/>
+<Highlighter-style name="Highlighter 2" pen-color="[255,204,0]" pen-height="14.0" pen-width="14.0" pen-opacity="0.8"/>
+</Styles>
+<Startup-Code startupcode=""/>
+<Task-table>
+    <Task-category name="&lt;default&gt;"/>
+</Task-table>
+<Task/><Presentation-Block>
+<Group view="code" hide-input="false" hide-output="false" labelreference="L1153" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">with(linalg):
+with(LinearAlgebra):</Text-field>
+</Input>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">interface(rtablesize=infinity):</Text-field>
+</Input>
+</Group></Presentation-Block>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1"><Font encoding="UTF-8">b\303\241sicos, x, lambda</Font></Text-field></Title><Presentation-Block>
+<Group view="presentation" hide-input="false" hide-output="true" inline-output="false" labelreference="L1234" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"></Text-field>
+</Input>
+</Group></Presentation-Block><Presentation-Block>
+<Group view="code" hide-input="false" hide-output="false" labelreference="L1247" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">LieMat := (A,B)-&gt;A.B-B.A;</Text-field>
+</Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVEnTGllTWF0RicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEpJkFzc2lnbjtGJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1JKG1mZW5jZWRHRiQ2JC1GIzYoLUYsNiVRIkFGJ0YvRjItRjY2LVEiLEYnRjlGOy9GP0YxRkBGQkZERkZGSC9GS1EmMC4wZW1GJy9GTlEsMC4zMzMzMzMzZW1GJy1GLDYlUSJCRidGL0YyLyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lKXJlYWRvbmx5R0Y9RjlGOS1GNjYtUSYmbWFwO0YnRjlGO0Y+L0ZBRjFGQkZERkZGSEZKRk0tRiM2Ji1GIzYmRlQtRjY2LVEpJm1pZGRvdDtGJ0Y5RjtGPkZARkJGREZGRkgvRktRLDAuMTY2NjY2N2VtRicvRk5GXXBGaW5GOS1GNjYtUSgmbWludXM7RidGOUY7Rj5GQEZCRkRGRkZIL0ZLUSwwLjIyMjIyMjJlbUYnL0ZORmNwLUYjNiZGaW5GaW9GVEY5RjlGOQ==">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSdMaWVNYXRHRihmKjYkSSJBR0YoSSJCR0YoRig2JEkpb3BlcmF0b3JHRihJJmFycm93R0YoRigsJi1JIi5HRiU2JDkkOSUiIiItRjc2JEY6RjkhIiJGKEYoRig3I0Yu</Equation></Text-field>
+</Output>
+</Group>
+<Group view="code" hide-input="false" hide-output="false" labelreference="L1830" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" foreground="[0,128,128]" layout="Normal"><Font foreground="[0,128,128]">AntiLieMat := (A,B)-&gt;A.B+B.A;</Font></Text-field>
+</Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYoLUkjbWlHRiQ2JVErQW50aUxpZU1hdEYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJy1JI21vR0YkNi1RKSZBc3NpZ247RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0Y9LyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRLDAuMjc3Nzc3OGVtRicvJSdyc3BhY2VHRkwtSShtZmVuY2VkR0YkNiQtRiM2KC1GLDYlUSJBRidGL0YyLUY2Ni1RIixGJ0Y5RjsvRj9GMUZARkJGREZGRkgvRktRJjAuMGVtRicvRk5RLDAuMzMzMzMzM2VtRictRiw2JVEiQkYnRi9GMi8lK2ZvcmVncm91bmRHUShbMCwwLDBdRicvJSlyZWFkb25seUdGPUY5RjktRjY2LVEmJm1hcDtGJ0Y5RjtGPi9GQUYxRkJGREZGRkhGSkZNLUYjNiYtRiM2JkZULUY2Ni1RKSZtaWRkb3Q7RidGOUY7Rj5GQEZCRkRGRkZIL0ZLUSwwLjE2NjY2NjdlbUYnL0ZORl1wRmluRjktRjY2LVEnJnBsdXM7RidGOUY7Rj5GQEZCRkRGRkZIL0ZLUSwwLjIyMjIyMjJlbUYnL0ZORmNwLUYjNiZGaW5GaW9GVEY5RjlGOQ==">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SStBbnRpTGllTWF0R0YoZio2JEkiQUdGKEkiQkdGKEYoNiRJKW9wZXJhdG9yR0YoSSZhcnJvd0dGKEYoLCYtSSIuR0YlNiQ5JDklIiIiLUY3NiRGOkY5RjtGKEYoRig3I0Yu</Equation></Text-field>
+</Output>
+</Group></Presentation-Block><Presentation-Block>
+<Group view="code" hide-input="false" hide-output="false" labelreference="L2503" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">del:=(a,b)-&gt; if a=b then 1 else 0 fi:
+</Text-field>
+</Input>
+</Group></Presentation-Block><Presentation-Block>
+<Group hide-input="false" hide-output="false" labelreference="L2560" drawlabel="true">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">xx:=(a,b,m)-&gt;(a+b-m)/2:
+</Text-field>
+</Input>
+</Group>
+<Group view="code" hide-output="false" labelreference="L2559" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">lambda:=proc(m,n,mu,r) local R:
+R:=0:
+if r&gt;=0 and r&lt;=xx(m,n,mu) then 
+   R:=(-1)^r*binomial(xx(m,n,mu),r)/binomial(xx(m,n,mu)+mu,m-r):
+fi:
+
+return R:
+end proc:
+
+<Font foreground="[0,128,128]">lambda_int:=proc(m,n,mu,r) local R:
+R:=0:
+if r&gt;=0 and r&lt;=xx(m,n,mu) then 
+   R:=(-1)^r*binomial(m-r,xx(m,n,mu)-r)*binomial(n+r-xx(m,n,mu),r):
+fi:
+
+return R:
+end proc:
+</Font></Text-field>
+</Input>
+</Group></Presentation-Block>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Relaciones de productos</Text-field></Title><Presentation-Block>
+<Group view="code" hide-output="false" labelreference="L2550" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Cond_Triangular := proc(a,b,c) local r:
+r:=1:
+   if floor((a+b+c)/2)&lt;&gt;(a+b+c)/2 then r:=0: fi:
+   if c&lt;abs(a-b) then r:=0: fi:
+   if c&gt;a+b then r:=0: fi:
+return r:
+end proc:
+</Text-field>
+</Input>
+</Group></Presentation-Block><Presentation-Block>
+<Group view="code" hide-output="false" labelreference="L2551" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Multiplica := proc(u,v,T) local i,j,k,d,w;
+d:=nops(convert(u,list)):
+w:=Vector(d,0):
+for i from 1 to d do:
+   for j from 1 to d do:
+      for k from 1 to d do:
+         w[k]:=simplify(w[k]+u[i]*v[j]*T[i,j][k]):
+      od:
+   od:
+od:
+return w:
+end proc:
+</Text-field>
+</Input>
+</Group>
+<Group view="code" hide-output="false" labelreference="L2554" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">VerifJacobi_4 := proc(T) local i,j,a,b,c,d,dd,r1,r2,TT,l,m,cond,s:
+dd:=nops(T[1,2]):
+cond:={}:
+for a from 1 to dd do:
+  for b from 1 to dd do:
+    for c from 1 to dd do:
+      for d from 1 to dd do:
+        for l from 1 to dd do:
+          s:=0:
+          for r1 from 1 to dd do:
+          for r2 from 1 to dd do:
+            s:=s
+               +x1*T[a,b][r1]*T[r1,c][r2]*T[r2,d][l]
+               +x2*T[a,c][r1]*T[r1,b][r2]*T[r2,d][l]
+               +x3*T[a,d][r1]*T[r1,c][r2]*T[r2,b][l]
+               +x4*T[a,b][r1]*T[r1,d][r2]*T[r2,c][l]
+               +x5*T[a,d][r1]*T[r1,b][r2]*T[r2,c][l]
+               +x6*T[a,c][r1]*T[r1,d][r2]*T[r2,b][l]
+
+               +y1*T[b,c][r1]*T[r1,a][r2]*T[r2,d][l]
+               +y2*T[b,d][r1]*T[r1,a][r2]*T[r2,c][l]
+               +y3*T[b,c][r1]*T[r1,d][r2]*T[r2,a][l]
+               +y4*T[b,d][r1]*T[r1,c][r2]*T[r2,a][l]
+               +y5*T[c,d][r1]*T[r1,a][r2]*T[r2,b][l]
+               +y6*T[c,d][r1]*T[r1,b][r2]*T[r2,a][l]
+
+               +z1*T[a,b][r1]*T[c,d][r2]*T[r1,r2][l]
+               +z2*T[a,c][r1]*T[b,d][r2]*T[r1,r2][l]
+               +z3*T[a,d][r1]*T[c,b][r2]*T[r1,r2][l]:
+          od:od: 
+          if simplify(s)&lt;&gt;0 then cond:=cond union {simplify(s)=0}:fi:
+        od:
+      od:
+    od:
+  od:
+od:
+
+return cond:
+end proc:
+</Text-field>
+</Input>
+</Group>
+<Group view="code" hide-output="false" labelreference="L2552" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">VerifJacobi := proc(T) local i,j,a,b,c,r,l,dd,TT,m,cond,s:
+dd:=nops(T[1,2]):
+cond:={}:
+for a from 1 to dd do:
+   for b from 1 to dd do:
+      for c from 1 to dd do:
+         for l from 1 to dd do:
+            s:=0:
+            for r from 1 to dd do:
+               s:=s
+                  +T[a,b][r]*T[r,c][l]
+                  -T[a,c][r]*T[r,b][l]
+                  +T[b,c][r]*T[r,a][l]:
+            od:
+            if simplify(s)&lt;&gt;0 then cond := cond union {simplify(s) = 0}:fi:
+         od:
+      od:
+   od:
+od:
+
+return cond:
+end proc:
+</Text-field>
+</Input>
+</Group>
+<Group view="code" hide-output="false" labelreference="L2555" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">VerifJacobi_b := proc(T,a1) local i,j,a,b,c,r,l,dd,TT,m,cond,s:
+dd:=nops(T[1,2]):
+cond:={}:
+for a from a1 to dd do:
+   for b from a+1 to dd do:
+      for c from 1 to dd do:
+         for l from 1 to dd do:
+            s:=0:
+            for r from 1 to dd do:
+               s:=s
+                  +T[a,b][r]*T[r,c][l]
+                  -T[a,c][r]*T[r,b][l]
+                  +T[b,c][r]*T[r,a][l]:
+            od:
+            if simplify(s)&lt;&gt;0 then: 
+               cond := cond union {simplify(s) = 0}: 
+               print(cond,a):
+               return:
+            fi:
+         od:
+      od:
+   od:
+od:
+
+return cond:
+end proc:
+</Text-field>
+</Input>
+</Group>
+<Group view="code" hide-output="false" labelreference="L2556" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">VerifAssoc := proc(T) local i,j,a,b,c,r,l,dd,TT,m,cond,s:
+dd:=nops(T[1,2]):
+cond:={}:
+for a from 1 to dd do:
+   for b from 1 to dd do:
+      for c from 1 to dd do:
+         for l from 1 to dd do:
+            s:=0:
+            for r from 1 to dd do:
+               s:=s
+                  +T[a,b][r]*T[r,c][l]
+                  -T[b,c][r]*T[a,r][l]:
+            od:
+            if simplify(s)&lt;&gt;0 then cond := cond union {[a,b,c,simplify(s) = 0]}:fi:
+         od:
+      od:
+   od:
+od:
+
+return cond:
+end proc:
+</Text-field>
+</Input>
+</Group>
+<Group view="code" hide-output="false" labelreference="L2557" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">VerifLie := proc(T) local i,j,a,b,c,r,l,dd,TT,m,cond,s:
+dd:=nops(T[1,2]):
+cond:={}:
+for a from 1 to dd do:
+   for b from 1 to dd do:
+      for c from 1 to dd do:
+         cond:=cond union {T[a,b][c]+T[b,a][c]=0}:
+         for l from 1 to dd do:
+            s:=0:
+            for r from 1 to dd do:
+               s:=s
+                  +T[a,b][r]*T[r,c][l]
+                  -T[a,c][r]*T[r,b][l]
+                  +T[b,c][r]*T[r,a][l]:
+            od:
+            if simplify(s)&lt;&gt;0 then cond:=cond union {simplify(s) = 0}:fi:
+         od:
+      od:
+   od:
+od:
+
+return cond:
+end proc:
+</Text-field>
+</Input>
+</Group>
+<Group view="code" hide-output="false" labelreference="L2553" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" foreground="[0,128,128]" layout="Normal"><Font foreground="[0,128,128]">Verif_Abel := proc(T) local i,j,a,b,c,dd,cond,s:
+dd:=nops(T[1,2]):
+cond:={}:
+for a from 1 to dd do:
+   for b from 1 to dd do:
+      for c from 1 to dd do:
+         s := simplify(T[a,b][c]-T[b,a][c]):
+         if s &lt;&gt; 0 then:
+            cond:=cond union {s=0}:
+         fi:
+      od:
+   od:
+od:
+
+return cond:
+end proc:
+
+Verif_Anti_Abel := proc(T) local i,j,a,b,c,dd,cond,s:
+dd:=nops(T[1,2]):
+cond:={}:
+for a from 1 to dd do:
+   for b from 1 to dd do:
+      for c from 1 to dd do:
+         s := simplify(T[a,b][c]+T[b,a][c]):
+         if s &lt;&gt; 0 then:
+            cond:=cond union {s=0}:
+         fi:
+      od:
+   od:
+od:
+
+return cond:
+end proc:
+</Font></Text-field>
+</Input>
+</Group>
+<Group view="code" hide-output="false" labelreference="L2561" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" foreground="[0,128,128]" layout="Normal"><Font foreground="[0,128,128]">Verif_LeftAlt_Law := proc(T) local i,j,a,b,r,l,dd,TT,cond,s:
+dd:=nops(T[1,2]):
+cond:={}:
+for a from 1 to dd do:
+   for b from 1 to dd do:
+      for l from 1 to dd do:
+         s:=0:
+         for r from 1 to dd do:
+            s:=s
+               +T[a,a][r]*T[r,b][l]
+               -T[a,b][r]*T[a,r][l]:
+         od:
+         if simplify(s)&lt;&gt;0 then cond := cond union {[a,a,b,simplify(s) = 0]}:fi:
+       od:
+    od:
+od:
+
+return cond:
+end proc:
+
+Verif_RightAlt_Law := proc(T) local i,j,a,b,r,l,dd,TT,cond,s:
+dd:=nops(T[1,2]):
+cond:={}:
+for a from 1 to dd do:
+   for b from 1 to dd do:
+      for l from 1 to dd do:
+         s:=0:
+         for r from 1 to dd do:
+            s:=s
+               +T[a,b][r]*T[r,b][l]
+               -T[b,b][r]*T[a,r][l]:
+         od:
+         if simplify(s)&lt;&gt;0 then cond := cond union {[a,b,b,simplify(s) = 0]}:fi:
+       od:
+    od:
+od:
+
+return cond:
+end proc:
+</Font></Text-field>
+</Input>
+</Group></Presentation-Block><Presentation-Block>
+<Group view="code" hide-output="false" labelreference="L2547" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" foreground="[0,128,128]" layout="Normal"><Font foreground="[0,128,128]">Jacobiador := (X,Y,Z,TT) -&gt; map(simplify,Multiplica(Multiplica(X,Y,TT),Z,TT)+
+                                         Multiplica(Multiplica(Y,Z,TT),X,TT)+
+                                         Multiplica(Multiplica(Z,X,TT),Y,TT)):
+
+Asociador := (X,Y,Z,TT) -&gt; map(simplify,Multiplica(Multiplica(X,Y,TT),Z,TT)-
+                                        Multiplica(X,Multiplica(Y,Z,TT),TT)):
+</Font></Text-field>
+</Input>
+</Group>
+<Group view="code" hide-output="false" labelreference="L2715" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" foreground="[0,128,128]" layout="Normal"><Font foreground="[0,128,128]">Verif_Malcev := proc(T) 
+local a,b,c,r,s,t,l,dd,m,cond, sum1, sum2:
+dd:=nops(T[1,2]):
+cond:={}:
+for a from 1 to dd do:
+   for b from 1 to dd do:
+      for c from 1 to dd do:
+         for t from 1 to dd do:
+            sum1 := 0:
+            sum2 := 0:
+            for s from 1 to dd do:
+               for r from 1 to dd do:
+                  sum1 := sum1
+                          +T[a,b][r]*T[r,c][s]*T[s,a][t]
+                          +T[b,c][r]*T[r,a][s]*T[s,a][t]
+                          +T[c,a][r]*T[r,b][s]*T[s,a][t]:
+                  sum2 := sum2
+                          +T[a,b][r]*T[a,c][s]*T[r,s][t]
+                          +T[a,c][r]*T[b,r][s]*T[s,a][t]
+                          +T[a,c][r]*T[r,a][s]*T[s,b][t]:
+               od:
+            od:
+            if simplify(sum1 - sum2 )&lt;&gt;0 then cond := cond union {[a,b,c,simplify(sum1 - sum2) = 0]}:fi:
+         od:
+      od:
+   od:
+od:
+
+return cond:
+end proc:
+
+</Font></Text-field>
+</Input>
+</Group>
+<Group view="code" hide-output="false" labelreference="L2814" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" foreground="[0,128,128]" layout="Normal"><Font foreground="[255,153,0]"># Verifica la compatibilidad entre un producto asociativo y un corchete de Lie
+# Ta = Tabla de multiplicar de un producto asociativo
+# Tl = Tabla de multiplicar de un corchete de Lie</Font><Font foreground="[0,128,128]">
+
+Verif_comp_AsocLie := proc(Ta,Tl) local i,j,k,r,s,dim,cond,sum:
+dim := nops(Ta[1,2]):
+cond:={}:
+if dim = nops(Tl[1,2]) then:
+   for i from 1 to dim do:
+      for j from 1 to dim do:
+         for k from 1 to dim do:
+            for s from 1 to dim do:
+               sum := 0:
+               for r from 1 to dim do:
+                  sum := sum
+                         +Ta[j,k][r]*Tl[i,r][s]
+                         -Tl[i,j][r]*Ta[r,k][s]
+                         -Tl[i,k][r]*Ta[j,r][s]:
+               od:
+               if simplify(sum) &lt;&gt; 0 then cond := cond union {simplify(sum) = 0}: fi:
+            od:
+         od:
+      od:
+   od:
+else:
+   print(`Error en dimensiones de tablas`):
+fi: 
+
+return cond:
+end proc:</Font></Text-field>
+</Input>
+</Group></Presentation-Block>
+</Section>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Derivaciones </Text-field></Title><Presentation-Block>
+<Group view="code" hide-output="false" labelreference="L2505" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Derivaciones_T := proc(T,z) local x,i,j,l,n,var,X,ecu,lizq,lder,M,sol,vi,vj:
+n := nops(T[1,2]):
+var := [seq(seq(x[i,j],j=1..n),i=1..n)]:
+X := Matrix(n,n,var):
+ecu := []:
+
+for i from 1 to n do:
+  for j from 1 to n do:
+
+    lizq := X.Vector(T[i,j]):
+    vi := Vector(n,0):vi[i]:=1:
+    vj := Vector(n,0):vj[j]:=1:
+    lder := Multiplica(Column(X,i),vj,T)+Multiplica(vi,Column(X,j),T):
+    ecu := [op(ecu), seq(lizq[l]=lder[l],l=1..n)]:
+
+  od:
+od:
+
+M:=GenerateMatrix(ecu,var)[1]:
+sol:=NullSpace(M):
+print(&quot;Dim=&quot;,nops(sol)):
+M:=Matrix(n,n,0):
+for i from 1 to nops(sol) do:
+   M:=M+z[i]*Matrix(n,n,convert(sol[i],list)):
+od:
+M:
+end proc:
+</Text-field>
+</Input>
+</Group></Presentation-Block>
+</Section>
+</Section>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1">Manejo de vectores en el producto tensorial</Text-field></Title><Presentation-Block>
+<Group hide-output="false" labelreference="L1257" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Limpiar:=proc(L) local LL,k,i:
+LL:=L:
+k:=0:
+if L&lt;&gt;[] then 
+   for i from 1 to nops(L) do:
+      if L[i][3]=0 then:
+         k:=i:
+         break:
+      fi:
+   od:
+   if k&gt;0 then:
+      LL:=subsop(k=NULL, LL):
+      LL:=Limpiar(LL):
+   fi:
+fi:
+return LL:
+end proc:
+
+#-------------------------------------------#
+
+Colapsar:=proc(L) local LL,Pesos,k,k_prima,i:
+Pesos:=[]:
+k:=0:
+for i from 1 to nops(L) do:
+   if member([L[i][1],L[i][2]],Pesos,k_prima) then:
+      k:=i:
+      break:
+   fi:
+   Pesos:=[op(Pesos),[L[i][1],L[i][2]]]:
+od:
+
+if k=0 then:
+   LL:=L: 
+else 
+   LL:=subsop(k=NULL,k_prima=[L[k][1],L[k][2],simplify(factor(L[k_prima][3]+L[k][3]))], L):
+   LL:=Colapsar(LL):
+fi:
+return LL:
+end proc:
+</Text-field>
+</Input>
+</Group></Presentation-Block>
+</Section>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1">Definicion de E,F (tensor)</Text-field></Title><Presentation-Block>
+<Group hide-output="false" labelreference="L1293" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">E_Escalera:=proc(a,b,L) local d,R,i:
+d:=nops(L):
+
+R:=[]:
+for i from 1 to d do: 
+  if (L[i][1]+2) &lt;= a then   R:=[op(R), [ L[i][1]+2,L[i][2], (a+L[i][1]+2)/2*L[i][3]]]: fi:
+  if (L[i][2]+2) &lt;= b then   R:=[op(R), [ L[i][1],L[i][2]+2, (b+L[i][2]+2)/2*L[i][3]]]: fi: 
+od:
+Limpiar(Colapsar(R)):
+end proc:
+
+#---------------------------------------#
+E_Simetrico:=proc(a,b,L) local d,R,i:
+d:=nops(L):
+
+R:=[]:
+for i from 1 to d do: 
+  if (L[i][1]+2) &lt;= a then   R:=[op(R), [ L[i][1]+2,L[i][2], (a+L[i][1]+2)/2*(a-L[i][1])/2*L[i][3]]]: fi:
+  if (L[i][2]+2) &lt;= b then   R:=[op(R), [ L[i][1],L[i][2]+2, (b+L[i][2]+2)/2*(b-L[i][2])/2*L[i][3]]]: fi: 
+od:
+Limpiar(Colapsar(R)):
+end proc:
+
+#---------------------------------------#
+E_CG:=proc(a,b,L) local d,R,i:
+d:=nops(L):
+
+R:=[]:
+for i from 1 to d do: 
+  if (L[i][1]+2) &lt;= a then   R:=[op(R), [ L[i][1]+2,L[i][2], sqrt(a/2*(a/2+1)-L[i][1]/2*(L[i][1]/2+1))*L[i][3]]]: fi:
+  if (L[i][2]+2) &lt;= b then   R:=[op(R), [ L[i][1],L[i][2]+2, sqrt(b/2*(b/2+1)-L[i][2]/2*(L[i][2]/2+1))*L[i][3]]]: fi: 
+od:
+Limpiar(Colapsar(R)):
+end proc:</Text-field>
+</Input>
+</Group>
+<Group hide-output="false" labelreference="L1291" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">F_Simetrico:=proc(a,b,L) local d,R,i:
+d:=nops(L):
+
+R:=[]:
+for i from 1 to d do: 
+  if (L[i][2]-2) &gt;= -b then   R:=[op(R), [ L[i][1],L[i][2]-2, L[i][3]]]: fi: 
+  if (L[i][1]-2) &gt;= -a then   R:=[op(R), [ L[i][1]-2,L[i][2], L[i][3]]]: fi:
+od:
+Limpiar(Colapsar(R)):
+end proc:
+
+#---------------------------------------#
+F_Escalera:=proc(a,b,L) local d,R,i:
+d:=nops(L):
+
+R:=[]:
+for i from 1 to d do: 
+  if (L[i][1]-2) &gt;= -a then   R:=[op(R), [ L[i][1]-2,L[i][2], (a-L[i][1]+2)/2*L[i][3]]]: fi:
+  if (L[i][2]-2) &gt;= -b then   R:=[op(R), [ L[i][1],L[i][2]-2, (b-L[i][2]+2)/2*L[i][3]]]: fi: 
+od:
+Limpiar(Colapsar(R)):
+end proc:
+
+#---------------------------------------#
+F_CG:=proc(a,b,L) local d,R,i:
+d:=nops(L):
+
+R:=[]:
+for i from 1 to d do: 
+  if (L[i][1]-2) &gt;= -a then   R:=[op(R), [ L[i][1]-2,L[i][2], sqrt(a/2*(a/2+1)-L[i][1]/2*(L[i][1]/2-1))*L[i][3]]]: fi:
+  if (L[i][2]-2) &gt;= -b then   R:=[op(R), [ L[i][1],L[i][2]-2, sqrt(b/2*(b/2+1)-L[i][2]/2*(L[i][2]/2-1))*L[i][3]]]: fi: 
+od:
+Limpiar(Colapsar(R)):
+end proc:</Text-field>
+</Input>
+</Group></Presentation-Block>
+</Section>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1">Clebsch Gordan coefficient</Text-field></Title>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Clebsch Gordan Estandar</Text-field></Title><Presentation-Block>
+<Group view="code" hide-output="false" labelreference="L1300" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Font foreground="[255,102,0]"># Este es el Clebsch de wikipedia, no es el 3-j.
+</Font>
+CG_0 := proc(j1,j2,m1,m2,j,m) local k,R,x:
+R:=0:
+if m=m1+m2 and
+  (j+j1-j2)&gt;=0 and 
+  (j-j1+j2)&gt;=0 and 
+  (-j+j1+j2)&gt;=0 and 
+  abs(m1)&lt;=j1 and 
+  abs(m2)&lt;=j2 and 
+  abs(m)&lt;=j then 
+ 
+  for k from 0 to j1+j2-j do:
+    if k &lt;= j1-m1 and 
+       k &lt;= j2+m2 and 
+       k &gt;= j2-j-m1 and 
+       k &gt;= j1-j+m2 then 
+       x:=k!*(j1+j2-j-k)!*(j1-m1-k)!*(j2+m2-k)!*(k-j2+j+m1)!*(k-j1+j-m2)!: 
+       R:=R+(-1)^k/x:
+    fi:
+  od:
+  R:=sqrt( (2*j+1)*(j+j1-j2)!*(j-j1+j2)!*(-j+j1+j2)!/(j+j1+j2+1)! ) *R:
+  R:=sqrt((j+m)!*(j-m)!*(j1+m1)!*(j1-m1)!*(j2+m2)!*(j2-m2)!) *R: 
+fi:
+return R:
+end proc:
+
+CG := proc(j1,j2,m1,m2,j,m) local R:
+if m&gt;=0 then 
+  if j1&gt;=j2 then R:=CG_0(j1,j2,m1,m2,j,m)
+            else R:=(-1)^(j-j1-j2)*CG_0(j2,j1,m2,m1,j,m):
+  fi:
+  else 
+  if j1&gt;=j2 then R:=(-1)^(j-j1-j2)*CG_0(j1,j2,-m1,-m2,j,-m):
+            else R:=CG_0(j2,j1,-m2,-m1,j,-m):
+  fi:
+fi:
+return R:
+end proc:  
+</Text-field>
+</Input>
+</Group>
+<Group view="code" hide-input="false" hide-output="false" labelreference="L1299" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">j1:=1/2:
+j2:=1/2:
+j:=1:
+m:=-1:
+m1:=-1/2:
+m2:=-1/2:
+
+print(`Coef. de Clebsch-Gordan asoc. a:`);
+print(cat(`j1 = `,  j1,`, j2 = `,  j2,`, m1 = `,m1,`, m2 = `,m2,`, j = `,j,`, m = `,m));
+print(`------------------------`):
+CG(j1,j2,m1,m2,j,m);</Text-field>
+</Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbWlHNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2JVFBQ29lZi5+ZGV+Q2xlYnNjaC1Hb3JkYW5+YXNvYy5+YTpGJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRic=">SUFDb2VmLn5kZX5DbGVic2NoLUdvcmRhbn5hc29jLn5hOkc2Ig==</Equation></Text-field>
+</Output>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbWlHNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2JVFYajF+PX4xLzIsfmoyfj1+MS8yLH5tMX49fi0xLzIsfm0yfj1+LTEvMix+an49fjEsfm1+PX4tMUYnLyUnaXRhbGljR1EldHJ1ZUYnLyUsbWF0aHZhcmlhbnRHUSdpdGFsaWNGJw==">SVhqMX49fjEvMix+ajJ+PX4xLzIsfm0xfj1+LTEvMix+bTJ+PX4tMS8yLH5qfj1+MSx+bX49fi0xRzYi</Equation></Text-field>
+</Output>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbWlHNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2JVE5LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0Yn">STktLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS1HNiI=</Equation></Text-field>
+</Output>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUkjbW5HNiMvSSttb2R1bGVuYW1lRzYiSSxUeXBlc2V0dGluZ0dJKF9zeXNsaWJHRic2JFEiMUYnLyUsbWF0aHZhcmlhbnRHUSdub3JtYWxGJw==">IiIi</Equation></Text-field>
+</Output>
+</Group></Presentation-Block>
+</Section>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Clebsch Gordan enteros simetricos</Text-field></Title><Presentation-Block>
+<Group view="code" hide-output="false" labelreference="L1679" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Font foreground="[255,102,0]"># Este es el analogo a los coeficientes de Clebsch-Gordan si se considera como base de los irreducibles
+# a la base simetrica</Font>
+<Font foreground="[0,128,128]">
+CG_int := proc(n,m,mu,i,j,p) local R,r,k:
+R := 0:
+if floor(i)=i and floor(j)=j and floor(p)=p then:
+   if 0 &lt;= i and i&lt;=n then:
+      if 0 &lt;= j and j&lt;=m then:
+         if 0 &lt;= p and p&lt;=mu then:
+            if Cond_Triangular(n,m,mu)&lt;&gt;0 then:
+               k := xx(n,m,mu):
+               if n+m-2*(i+j)=mu-2*p then:
+                  for r from 0 to k do:</Font><Font foreground="[255,204,0]">
+                     </Font><Font foreground="[0,128,128]">R := R + (-1)^(r+1)*binomial(i+j-k,i-r)*binomial(n-r,k-r)*binomial(m+r-k,r):
+                  od:
+               fi: 
+            # else </Font><Font foreground="[255,204,0]">print(`Error, condicion triangular sobre n,m,s = `,n,m,mu):</Font><Font foreground="[0,128,128]">
+            fi:
+         else </Font><Font foreground="[255,204,0]">print(`Error, fuera de rango para p= `,p):</Font><Font foreground="[0,128,128]">
+         fi:
+      else </Font><Font foreground="[255,204,0]">print(`Error, fuera de rango para j= `,j):</Font><Font foreground="[0,128,128]">
+      fi:
+   else </Font><Font foreground="[255,204,0]">print(`Error, fuera de rango para i= `,i):</Font><Font foreground="[0,128,128]">
+   fi:
+else </Font><Font foreground="[255,204,0]" encoding="UTF-8">print(`Error de enteros en par\303\241metro i,j,p = `,i,j,p):</Font><Font foreground="[0,128,128]">
+fi:
+return R:
+end proc:
+</Font></Text-field>
+</Input>
+</Group>
+<Group view="code" hide-output="false" labelreference="L1189" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" foreground="[51,102,255]" spaceabove="0" linebreak="space" rightmargin="0" linespacing="0.0" initial="0" firstindent="0" leftmargin="0" bulletsuffix="" alignment="left" bullet="none" spacebelow="0" pagebreak-before="false"><Font foreground="[0,128,128]">DD_int := proc(n,m,mu) local R,k:
+k := xx(n,m,mu):
+R := binomial(m+n-k+1,k)*binomial(mu,n-k):
+return R:
+end proc:
+
+</Font><Font foreground="[255,102,0]" encoding="UTF-8"># Este ser\303\255a el coeficiente multiplicador V(n)xV(m)-----&gt;V(s)</Font><Font foreground="[51,102,255]">
+
+</Font><Font foreground="[0,128,128]">MG_int := proc(n,m,mu,i,j,p) local k, CG_aux, MG_aux, DD_aux:
+MG_aux := 0: 
+if 0&lt;=p and  p&lt;=mu then:
+   k := xx(n,m,mu):
+   CG_aux := CG_int(n,m,mu,n-i,m-j,mu-p):
+   DD_aux := DD_int(n,m,mu):
+   if CG_aux &lt;&gt; 0 and DD_aux &lt;&gt; 0 then:
+      MG_aux := (-1)^k*CG_aux/DD_aux:
+   fi:
+else </Font><Font foreground="[255,204,0]">print(`Error, fuera de rango para p= `,p):</Font><Font foreground="[0,128,128]">
+fi:
+return MG_aux:
+
+end proc:
+</Font></Text-field>
+</Input>
+</Group>
+<Group view="code" hide-output="false" labelreference="L1682" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" foreground="[0,128,128]" layout="Normal"><Font foreground="[255,153,0]" encoding="UTF-8"># Nota: Se chequea la relaci\303\263n de Ortogonalidad en el espacio de peso n+m-2*p para V(s1) y V(s2)
+# Par\303\241metros:
+</Font><Font foreground="[255,153,0]"># n, m: pesos dominantes de V(n) y V(m) respectivamente.
+# s1: peso dominante de V(s1) que ocurren en V(n)xV(m)
+# s2: peso dominante de V(s2) que ocurren en V(n)xV(m)
+# p: entero tal que 0 &lt;= p &lt;= (m+n) de manera que a+b-2p es un peso en V(s1) o V(s2)</Font><Font foreground="[255,102,0]">
+</Font><Font foreground="[0,128,128]">
+Check_Ort := proc(n,m,s1,s2,p) local i,j,r1,r2,k1,k2,R:
+R := 0:
+<Font encoding="UTF-8">print(cat(`Relaci\303\263n de Ortogonalidad en el peso `,n+m-2*p,` para `,s1,` y `,s2)):
+</Font>k1 := xx(n,m,s1):
+k2 := xx(n,m,s2):
+r1 := p-k1:
+r2 := p-k2:
+if 0&lt;=p  and p&lt;=(n+m) then:
+   for i from 0 to n do:
+      for j from 0 to m do:
+         if (i+j) = p then:
+            R := R + CG_int(n,m,s1,i,j,r1)*MG_int(n,m,s2,i,j,r2):
+            print(cat(` i = `,i,`   j = `,j)):
+            print(cat(` R + `, CG_int(n,m,s1,i,j,r1), ` * `,MG_int(n,m,s2,i,j,r2),` = `,R)): 
+            print(` -------------- `):
+
+         fi:
+      od:
+   od:
+else:
+   print(p,&quot; tomado fuera de intervalo&quot;):
+fi:
+return R:
+
+end proc:
+</Font></Text-field>
+</Input>
+</Group>
+<Group view="code" hide-input="false" hide-output="false" labelreference="L2024" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Font foreground="[255,153,0]"># Una segunda version de CG_int y MG_int con modificaciones en los signos</Font>
+
+<Font foreground="[0,128,128]">CG_int_sg := proc(n,m,mu,i,j,p) local R,r,k,sg:
+R := 0:
+if floor(i)=i and floor(j)=j and floor(p)=p then:
+   if 0 &lt;= i and i&lt;=n then:
+      if 0 &lt;= j and j&lt;=m then:
+         if 0 &lt;= p and p&lt;=mu then:
+            if Cond_Triangular(n,m,mu)&lt;&gt;0 then:
+               k := xx(n,m,mu):
+               sg := k mod 2:
+               if n+m-2*(i+j)=mu-2*p then:
+                  for r from 0 to k do:</Font><Font foreground="[255,204,0]">
+                     </Font><Font foreground="[0,128,128]">R := R + (-1)^(r+1)*binomial(i+j-k,i-r)*binomial(n-r,k-r)*binomial(m+r-k,r):
+                  od:
+                  R := (-1)^(sg+1)*R:
+               fi: 
+            # else </Font><Font foreground="[255,204,0]">print(`Error, condicion triangular sobre n,m,s = `,n,m,mu):</Font><Font foreground="[0,128,128]">
+            fi:
+         else </Font><Font foreground="[255,204,0]">print(`Error, fuera de rango para p= `,p):</Font><Font foreground="[0,128,128]">
+         fi:
+      else </Font><Font foreground="[255,204,0]">print(`Error, fuera de rango para j= `,j):</Font><Font foreground="[0,128,128]">
+      fi:
+   else </Font><Font foreground="[255,204,0]">print(`Error, fuera de rango para i= `,i):</Font><Font foreground="[0,128,128]">
+   fi:
+else </Font><Font foreground="[255,204,0]" encoding="UTF-8">print(`Error de enteros en par\303\241metro i,j,p = `,i,j,p):</Font><Font foreground="[0,128,128]">
+fi:
+return R:
+end proc:</Font><Font foreground="[0,128,0]">
+
+</Font><Font foreground="[51,153,102]">#-------------------------------------------#</Font>
+
+<Font foreground="[0,128,128]">MG_int_sg := proc(n,m,mu,i,j,p) local k, CG_aux, MG_aux, DD_aux:
+MG_aux := 0: 
+if 0&lt;=p and  p&lt;=mu then:
+   k := xx(n,m,mu):
+   CG_aux := CG_int_sg(n,m,mu,n-i,m-j,mu-p):
+   DD_aux := DD_int(n,m,mu):
+   if CG_aux &lt;&gt; 0 and DD_aux &lt;&gt; 0 then:
+      MG_aux := (-1)^k*CG_aux/DD_aux:
+   fi:
+else </Font><Font foreground="[255,204,0]">print(`Error, fuera de rango para p= `,p):</Font><Font foreground="[0,128,128]">
+fi:
+return MG_aux:
+
+end proc:</Font>
+</Text-field>
+</Input>
+</Group>
+<Group view="code" hide-output="false" labelreference="L2058" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Font foreground="[255,153,0]"># Para mostrar salidas</Font>
+<Font foreground="[0,128,128]">
+show_coef_CG := proc(n,m,mu) local i,j,p:
+   for i from 0 to n do:
+      for j from 0 to m do:
+         for p from 0 to mu do:
+            if (n+m-2*i-2*j) = (mu-2*p) then: </Font><Font foreground="[255,153,0]" encoding="UTF-8"># Ya es chequeada en la funci\303\263n pero lo hago para no imprimir todo</Font><Font foreground="[0,128,128]">
+               print(cat(`CG(`,n,m,mu,` , `,i,j,p,`)`)):
+               print(cat(mu,`,`,mu-2*p),`--&gt;`,CG(n/2,m/2,n/2-i,m/2-j,mu/2,mu/2-p),
+                                             ` en el tensor `,cat(n-2*i,`#`,m-2*j)):
+               # print(`  transpuesto  `):
+               # print(cat(mu,`,`,2*p-mu),`--&gt;`,CG(n/2,m/2,i-n/2,j-m/2,mu/2,p-mu/2),
+               #                               ` en el tensor `,cat(2*i-n,`#`,2*j-m)):
+               print(`  ------------  `):
+            fi:
+         od:
+      od:
+   od:
+end proc:
+
+</Font><Font foreground="[51,153,102]">#-------------------------------------------#
+
+</Font><Font foreground="[0,128,128]">show_coef_CG_int := proc(n,m,mu,band) local i,j,p:
+   for i from 0 to n do:
+      for j from 0 to m do:
+         for p from 0 to mu do:
+            if (n+m-2*i-2*j) = (mu-2*p) then: </Font><Font foreground="[255,153,0]" encoding="UTF-8"># Ya es chequeada en la funci\303\263n pero lo hago para no imprimir todo</Font><Font foreground="[0,128,128]">
+               if band = true then: 
+                  print(cat(`BG(`,n,m,mu,` , `,i,j,p,`)`)):
+                  print(cat(mu,`,`,mu-2*p),
+                        `--&gt;`,CG_int_sg(n,m,mu,i,j,p),` en el tensor `,cat(n-2*i,`#`,m-2*j)):
+
+                  # print(`  transpuesto  `):
+                  # print(cat(mu,`,`,2*p-mu),
+                  #       `--&gt;`,CG_int_sg(n,m,mu,n-i,m-j,mu-p),` en el tensor `,cat(2*i-n,`#`,2*j-m)):
+                  print(`  ------------  `):
+               else:
+                  print(cat(`BG(`,n,m,mu,` , `,i,j,p,`)`)):
+                  print(cat(mu,`,`,mu-2*p),
+                        `--&gt;`,CG_int(n,m,mu,i,j,p),` en el tensor `,cat(n-2*i,`#`,m-2*j)):
+
+                  # print(`  transpuesto  `):
+                  # print(cat(mu,`,`,2*p-mu),
+                  #     `--&gt;`,CG_int(n,m,mu,n-i,m-j,mu-p),` en el tensor `,cat(2*i-n,`#`,2*j-m)):
+</Font>                  <Font foreground="[0,128,128]">print(`  ------------  `):
+               fi:
+            fi:
+         od:
+      od:
+   od:
+end proc:
+
+#-------------------------------------------#
+
+show_coef_MG_int := proc(n,m,mu,band) local i,j,p:
+   for i from 0 to n do:
+      for j from 0 to m do:
+         for p from 0 to mu do:
+            if (n+m-2*i-2*j) = (mu-2*p) then:
+               if band = true then:
+                  print(cat(`MG(`,n,m,mu,` , `,i,j,p,`)`)):
+                  print(cat(n-2*i,`#`,m-2*j),
+                            `--&gt;`,MG_int_sg(n,m,mu,i,j,p),` en el vec_peso `,cat(mu,`,`,mu-2*p)):
+                  print(`  ------------  `):
+               else:
+                  print(cat(`MG(`,n,m,mu,` , `,i,j,p,`)`)):
+                  print(cat(n-2*i,`#`,m-2*j),
+                            `--&gt;`,MG_int(n,m,mu,i,j,p),` en el vec_peso `,cat(mu,`,`,mu-2*p)):
+</Font>                  <Font foreground="[0,128,128]">print(`  ------------  `):
+               fi:
+            fi:
+         od:
+      od:
+   od:
+end proc:
+</Font></Text-field>
+</Input>
+</Group></Presentation-Block>
+</Section>
+</Section>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 1" layout="Heading 1">Tabla de multiplicar a partir de sl(2)-tabla</Text-field></Title>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Corrige Tabla</Text-field></Title><Presentation-Block>
+<Group view="code" hide-output="false" labelreference="L1334" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Font foreground="[255,153,0]"># Una vez que uno arma una sl(2)-tabla, se pone ceros en los lugares que 
+<Font encoding="UTF-8"># el coeficiente debe ser cero por condici\303\263n triangular (Clebsch-Gordan)</Font>
+</Font>
+Corrije_Tabla:=proc(S,T) local i,j,k:
+for i from 1 to nops(S) do:
+   for j from 1 to nops(S) do:
+      for k from 1 to nops(S) do:
+         if Cond_Triangular(S[i],S[j],S[k])=0 and T[i,j][k]&lt;&gt;0 then
+            T[i,j]:=subsop(k=0,T[i,j]):  <Font foreground="[153,204,0]"># Anulamos la posicion k de T[i,j]
+</Font><Font encoding="UTF-8">            print(cat(`Se anul\303\263 la posicion `,k,` en  T[`,i,`,`,j,`]  --&gt; `),T[i,j]):
+</Font>         fi:
+      od:
+   od:
+od:
+eval(T):
+end proc:
+
+</Text-field>
+</Input>
+</Group>
+<Group view="code" hide-output="false" labelreference="L1340" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">S:=[1,2]:
+T:='T':
+T[1,1]:=[q111,q112]:
+T[1,2]:=[q121,q122]:
+T[2,1]:=[q211,q212]:
+T[2,2]:=[q221,q222]:
+</Text-field>
+</Input>
+</Group>
+<Group view="code" hide-input="false" hide-output="false" labelreference="L1332" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Corrije_Tabla(S,T):</Text-field>
+</Input>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVFNU2V+YW51bCYjMjQzO35sYX5wb3NpY2lvbn4xfmVufn5UWzEsMV1+fi0tPn5GJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRictSSNtb0dGJDYtUSgmY29tbWE7RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0YxLyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRJjAuMGVtRicvJSdyc3BhY2VHUSwwLjMzMzMzMzNlbUYnLUkobWZlbmNlZEdGJDYmLUYjNigtSSNtbkdGJDYkUSIwRidGOS1GNjYtUSIsRidGOUY7Rj5GQEZCRkRGRkZIRkpGTS1GLDYlUSVxMTEyRidGL0YyLyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lKXJlYWRvbmx5R0Y9RjlGOS8lJW9wZW5HUScmbHNxYjtGJy8lJmNsb3NlR1EnJnJzcWI7RidGOQ==">NiRJSVNlfmFudWx8Xnd8XnZ+bGF+cG9zaWNpb25+MX5lbn5+VFsxLDFdfn4tLT5+RzYiNyQiIiFJJXExMTJHRiQ=</Equation></Text-field>
+</Output>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVFNU2V+YW51bCYjMjQzO35sYX5wb3NpY2lvbn4yfmVufn5UWzEsMl1+fi0tPn5GJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRictSSNtb0dGJDYtUSgmY29tbWE7RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0YxLyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRJjAuMGVtRicvJSdyc3BhY2VHUSwwLjMzMzMzMzNlbUYnLUkobWZlbmNlZEdGJDYmLUYjNigtRiw2JVElcTEyMUYnRi9GMi1GNjYtUSIsRidGOUY7Rj5GQEZCRkRGRkZIRkpGTS1JI21uR0YkNiRRIjBGJ0Y5LyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lKXJlYWRvbmx5R0Y9RjlGOS8lJW9wZW5HUScmbHNxYjtGJy8lJmNsb3NlR1EnJnJzcWI7RidGOQ==">NiRJSVNlfmFudWx8Xnd8XnZ+bGF+cG9zaWNpb25+Mn5lbn5+VFsxLDJdfn4tLT5+RzYiNyRJJXExMjFHRiQiIiE=</Equation></Text-field>
+</Output>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVFNU2V+YW51bCYjMjQzO35sYX5wb3NpY2lvbn4yfmVufn5UWzIsMV1+fi0tPn5GJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRictSSNtb0dGJDYtUSgmY29tbWE7RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0YxLyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRJjAuMGVtRicvJSdyc3BhY2VHUSwwLjMzMzMzMzNlbUYnLUkobWZlbmNlZEdGJDYmLUYjNigtRiw2JVElcTIxMUYnRi9GMi1GNjYtUSIsRidGOUY7Rj5GQEZCRkRGRkZIRkpGTS1JI21uR0YkNiRRIjBGJ0Y5LyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lKXJlYWRvbmx5R0Y9RjlGOS8lJW9wZW5HUScmbHNxYjtGJy8lJmNsb3NlR1EnJnJzcWI7RidGOQ==">NiRJSVNlfmFudWx8Xnd8XnZ+bGF+cG9zaWNpb25+Mn5lbn5+VFsyLDFdfn4tLT5+RzYiNyRJJXEyMTFHRiQiIiE=</Equation></Text-field>
+</Output>
+<Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVFNU2V+YW51bCYjMjQzO35sYX5wb3NpY2lvbn4xfmVufn5UWzIsMl1+fi0tPn5GJy8lJ2l0YWxpY0dRJXRydWVGJy8lLG1hdGh2YXJpYW50R1EnaXRhbGljRictSSNtb0dGJDYtUSgmY29tbWE7RicvRjNRJ25vcm1hbEYnLyUmZmVuY2VHUSZmYWxzZUYnLyUqc2VwYXJhdG9yR0YxLyUpc3RyZXRjaHlHRj0vJSpzeW1tZXRyaWNHRj0vJShsYXJnZW9wR0Y9LyUubW92YWJsZWxpbWl0c0dGPS8lJ2FjY2VudEdGPS8lJ2xzcGFjZUdRJjAuMGVtRicvJSdyc3BhY2VHUSwwLjMzMzMzMzNlbUYnLUkobWZlbmNlZEdGJDYmLUYjNigtSSNtbkdGJDYkUSIwRidGOS1GNjYtUSIsRidGOUY7Rj5GQEZCRkRGRkZIRkpGTS1GLDYlUSVxMjIyRidGL0YyLyUrZm9yZWdyb3VuZEdRKFswLDAsMF1GJy8lKXJlYWRvbmx5R0Y9RjlGOS8lJW9wZW5HUScmbHNxYjtGJy8lJmNsb3NlR1EnJnJzcWI7RidGOQ==">NiRJSVNlfmFudWx8Xnd8XnZ+bGF+cG9zaWNpb25+MX5lbn5+VFsyLDJdfn4tLT5+RzYiNyQiIiFJJXEyMjJHRiQ=</Equation></Text-field>
+</Output>
+</Group></Presentation-Block>
+</Section>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Completa sl2-Tabla</Text-field></Title><Presentation-Block>
+<Group hide-output="false" labelreference="L2630" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">slTabla_a_tabla_completa:=proc(S,T) local i,j,ii,jj,k,kk,TT,d,SS,s,a,b,c,cg:
+
+d:=0:
+SS:=[d]:
+for s from 1 to nops(S) do:
+  d:=d+S[s]+1:
+  SS:=[op(SS),d];
+od:
+
+for i from 1 to nops(S) do:
+   for j from 1 to nops(S) do:
+      for ii from 1 to S[i]+1 do:
+         for jj from 1 to S[j]+1 do: 
+            TT[SS[i]+ii,SS[j]+jj]:=[seq(0,k=1..d)]:
+         od:
+      od:
+   od:
+od:
+for i from 1 to nops(S) do: 
+   a:=S[i]:
+   for j from 1 to nops(S) do: 
+      b:=S[j]:
+      for ii from 1 to a+1 do:
+         for jj from 1 to b+1 do: 
+            for k from 1 to nops(S) do: 
+               c:=S[k]:
+               for kk from 1 to c+1 do:
+               cg:=CG(a/2,b/2,a/2+1-ii,b/2+1-jj,c/2,c/2+1-kk):
+               TT[SS[i]+ii,SS[j]+jj][SS[k]+kk] := TT[SS[i]+ii,SS[j]+jj][SS[k]+kk]+T[i,j][k]*cg:
+               od:
+            od:
+         od:
+      od:
+   od:
+od: 
+d:=0:
+eval(TT):
+
+end proc:<Font foreground="[0,128,128]">
+</Font></Text-field>
+</Input>
+</Group>
+<Group view="code" hide-output="false" labelreference="L2631" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Font foreground="[0,128,128]">slTabla_a_tabla_completa_MG:=proc(S,T,band) local i,j,ii,jj,k,kk,TT,d,SS,s,a,b,c,MG:
+
+d:=0:
+SS:=[d]:
+for s from 1 to nops(S) do:
+  d:=d+S[s]+1:
+  SS:=[op(SS),d];
+od:
+
+for i from 1 to nops(S) do:
+   for j from 1 to nops(S) do:
+      for ii from 1 to S[i]+1 do:
+         for jj from 1 to S[j]+1 do: 
+            TT[SS[i]+ii,SS[j]+jj]:=[seq(0,k=1..d)]:
+         od:
+      od:
+   od:
+od:
+for i from 1 to nops(S) do: 
+   a:=S[i]: </Font><Font foreground="[255,102,0]"># Se toma el modulo de peso S[i]</Font><Font foreground="[0,128,128]">
+   for j from 1 to nops(S) do: 
+      b:=S[j]: </Font><Font foreground="[255,102,0]"># Se toma el modulo de peso S[j]</Font><Font foreground="[0,128,128]">
+      for ii from 1 to a+1 do:
+         for jj from 1 to b+1 do: 
+            for k from 1 to nops(S) do: 
+               if band = true then:
+                  c:=S[k]:  </Font><Font foreground="[255,102,0]"># Se toma el modulo de peso S[k] (los unicos posibles en la multiplicacion)</Font><Font foreground="[0,128,128]">
+                  for kk from 1 to c+1 do:
+                  </Font><Font foreground="[153,51,102]">MG:=MG_int_sg(a,b,c,ii-1,jj-1,kk-1):
+</Font><Font foreground="[0,128,128]">                  TT[SS[i]+ii,SS[j]+jj][SS[k]+kk] := TT[SS[i]+ii,SS[j]+jj][SS[k]+kk]+T[i,j][k]*MG:
+</Font>                  <Font foreground="[0,128,128]">od:
+               else:
+                  c:=S[k]:  </Font><Font foreground="[255,102,0]"># Se toma el modulo de peso S[k] (los unicos posibles en la multiplicacion)</Font><Font foreground="[0,128,128]">
+                  for kk from 1 to c+1 do:
+                  </Font><Font foreground="[153,51,102]">MG:=MG_int(a,b,c,ii-1,jj-1,kk-1):</Font><Font foreground="[0,128,128]">
+                  TT[SS[i]+ii,SS[j]+jj][SS[k]+kk] := TT[SS[i]+ii,SS[j]+jj][SS[k]+kk]+T[i,j][k]*MG:
+</Font>                 <Font foreground="[0,128,128]"> od:
+               fi:
+            od:
+         od:
+      od:
+   od:
+od: 
+d:=0:
+eval(TT):
+
+end proc:
+</Font></Text-field>
+</Input>
+</Group></Presentation-Block>
+<Group hide-output="false" labelreference="L2629" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input>
+</Input>
+</Group>
+</Section>
+<Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 2" layout="Heading 2">Imprime Tabla </Text-field></Title>
+<Group hide-output="false" labelreference="L2632" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">ev_exp := proc(list1,list2)
+local pol, ii:
+
+pol:=0:
+if nops(list1) = nops(list2) then:
+   for ii from 1 to nops(list1) do:
+      pol := pol + list1[ii]*list2[ii]:
+   od:
+fi:
+
+return pol: 
+end proc:
+
+Impr_tabla := proc(Tb, ret)
+local dd, ii, jj, m_pr, c_let:
+dd := nops(Tb[1,1]):
+
+c_let := [seq(e||i,i=1..dd)]:
+m_pr := Matrix(dd+1):
+m_pr[1,1] := `*`:
+
+for ii from 2 to dd+1 do:
+   m_pr[ii,1] := c_let[ii-1]:
+   m_pr[1,ii] := c_let[ii-1]:
+od:
+
+for ii from 2 to dd+1 do:
+   for jj from 2 to dd+1 do:
+      m_pr[ii,jj] := ev_exp(Tb[ii-1,jj-1],c_let):
+   od:
+od:
+if ret = true then:
+   return m_pr:
+else:
+   print(m_pr):
+fi:
+end proc:
+
+<Font foreground="[0,128,128]">Impr_tabla_st := proc(Tb, ret, st)
+local dd, ii, jj, m_pr, c_let:
+dd := nops(Tb[1,1]):
+
+c_let := [seq(x||i,i=st..dd-(1-st))]:
+m_pr := Matrix(dd+1):
+m_pr[1,1] := `*`:
+
+for ii from 2 to dd+1 do:
+   m_pr[ii,1] := c_let[ii-1]:
+   m_pr[1,ii] := c_let[ii-1]:
+od:
+
+for ii from 2 to dd+1 do:
+   for jj from 2 to dd+1 do:
+      m_pr[ii,jj] := ev_exp(Tb[ii-1,jj-1],c_let):
+   od:
+od:
+if ret = true then:
+   return m_pr:
+else:
+   print(m_pr):
+fi:
+end proc:</Font></Text-field>
+</Input>
+</Group>
+<Group hide-input="false" hide-output="false" labelreference="L2633" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input>
+</Input>
+</Group>
+</Section>
+</Section><Presentation-Block>
+<Group view="presentation" inline-output="false" labelreference="L3045" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
+<Input><Text-field style="Text" layout="Normal"><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
+</Input>
+</Group></Presentation-Block>
+</Worksheet>

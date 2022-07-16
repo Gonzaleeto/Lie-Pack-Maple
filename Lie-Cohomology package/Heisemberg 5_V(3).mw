@@ -93,7 +93,7 @@
 ecu:=[
 x3*xm3=z0,
 x1*xm1=-3*z0
-];<Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lMGZvbnRfc3R5bGVfbmFtZUdRKDJEfk1hdGhGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+];<Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvJTBmb250X3N0eWxlX25hbWVHUSgyRH5NYXRoRicvRjNRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0Yn</Equation></Text-field>
 </Input>
 <Output><Text-field style="2D Output" layout="Maple Output"><Equation executable="false" style="2D Output" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYmLUkjbWlHRiQ2JVEkZWN1RicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLUkjbW9HRiQ2LVEpJkFzc2lnbjtGJy9GM1Enbm9ybWFsRicvJSZmZW5jZUdRJmZhbHNlRicvJSpzZXBhcmF0b3JHRj0vJSlzdHJldGNoeUdGPS8lKnN5bW1ldHJpY0dGPS8lKGxhcmdlb3BHRj0vJS5tb3ZhYmxlbGltaXRzR0Y9LyUnYWNjZW50R0Y9LyUnbHNwYWNlR1EsMC4yNzc3Nzc4ZW1GJy8lJ3JzcGFjZUdGTC1JKG1mZW5jZWRHRiQ2Ji1GIzYoLUYjNiYtRiM2Ji1GLDYlUSN4M0YnRi9GMi1GNjYtUTEmSW52aXNpYmxlVGltZXM7RidGOUY7Rj5GQEZCRkRGRkZIL0ZLUSYwLjBlbUYnL0ZORmluLUYsNiVRJHhtM0YnRi9GMkY5LUY2Ni1RKSZlcXVhbHM7RidGOUY7Rj5GQEZCRkRGRkZIRkpGTS1GLDYlUSN6MEYnRi9GMkY5LUY2Ni1RIixGJ0Y5RjsvRj9GMUZARkJGREZGRkhGaG4vRk5RLDAuMzMzMzMzM2VtRictRiM2Ji1GIzYmLUYsNiVRI3gxRidGL0YyRmVuLUYsNiVRJHhtMUYnRi9GMkY5Rl5vLUYjNiUtRjY2LVEqJnVtaW51czA7RidGOUY7Rj5GQEZCRkRGRkZIL0ZLUSwwLjIyMjIyMjJlbUYnL0ZORmpwLUYjNiYtSSNtbkdGJDYkUSIzRidGOUZlbkZhb0Y5RjlGOS8lK2ZvcmVncm91bmRHUShbMCwwLDBdRicvJSlyZWFkb25seUdGPUY5RjkvJSVvcGVuR1EnJmxzcWI7RicvJSZjbG9zZUdRJyZyc3FiO0YnRjk=">LV9JLFR5cGVzZXR0aW5nRzYkJSpwcm90ZWN0ZWRHSShfc3lzbGliRzYiSSxtcHJpbnRzbGFzaEdGKDYkNyM+SSRlY3VHRig3JC8qJkkjeDNHRigiIiJJJHhtM0dGKEYySSN6MEdGKC8qJkkjeDFHRihGMkkkeG0xR0YoRjIsJComIiIkRjJGNEYyISIiNyNGLg==</Equation></Text-field>
 </Output>
@@ -132,52 +132,52 @@ Cob_Tot_D := Vector(1 .. dimL+1, 0):  # Coborde dominante total</Font></Text-fie
 Base_01:=[x3,x1,xm1,xm3,z0]:
 Base_10:=[xm3,xm1,x1,x3,z0]:
 <Font foreground="[51,102,255]">#2</Font>
-Base_20:=BasisTensor_Alt(Base_10,2):
-Base_02:=BasisTensor_Alt(Base_01,2):
-Base_11:=BasisTensor_2power(Base_10,Base_01):
+Base_20:=BasisAlt_of_list(Base_10,2):
+Base_02:=BasisAlt_of_list(Base_01,2):
+Base_11:=Basis_of_TensorC(Base_10,Base_01):
 <Font foreground="[51,102,255]">#3
-</Font>Base_30:=BasisTensor_Alt(Base_10,3):
-Base_03:=BasisTensor_Alt(Base_01,3):
-Base_21:=BasisTensor_2power(Base_20,Base_01):
-Base_12:=BasisTensor_2power(Base_10,Base_02):
+</Font>Base_30:=BasisAlt_of_list(Base_10,3):
+Base_03:=BasisAlt_of_list(Base_01,3):
+Base_21:=Basis_of_TensorC(Base_20,Base_01):
+Base_12:=Basis_of_TensorC(Base_10,Base_02):
 <Font foreground="[51,102,255]">#4
-</Font>Base_40:=BasisTensor_Alt(Base_10,4):
-Base_04:=BasisTensor_Alt(Base_01,4):
-Base_31:=BasisTensor_2power(Base_30,Base_01):
-Base_22:=BasisTensor_2power(Base_20,Base_02):
-Base_13:=BasisTensor_2power(Base_10,Base_03):
+</Font>Base_40:=BasisAlt_of_list(Base_10,4):
+Base_04:=BasisAlt_of_list(Base_01,4):
+Base_31:=Basis_of_TensorC(Base_30,Base_01):
+Base_22:=Basis_of_TensorC(Base_20,Base_02):
+Base_13:=Basis_of_TensorC(Base_10,Base_03):
 <Font foreground="[51,102,255]">#5
-</Font>Base_50:=BasisTensor_Alt(Base_10,5):
-Base_05:=BasisTensor_Alt(Base_01,5):
-Base_41:=BasisTensor_2power(Base_40,Base_01):
-Base_32:=BasisTensor_2power(Base_30,Base_02):
-Base_23:=BasisTensor_2power(Base_20,Base_03):
-Base_14:=BasisTensor_2power(Base_10,Base_04):
+</Font>Base_50:=BasisAlt_of_list(Base_10,5):
+Base_05:=BasisAlt_of_list(Base_01,5):
+Base_41:=Basis_of_TensorC(Base_40,Base_01):
+Base_32:=Basis_of_TensorC(Base_30,Base_02):
+Base_23:=Basis_of_TensorC(Base_20,Base_03):
+Base_14:=Basis_of_TensorC(Base_10,Base_04):
 <Font foreground="[51,102,255]">#6
-</Font>Base_51:=BasisTensor_2power(Base_50,Base_01):
-Base_42:=BasisTensor_2power(Base_40,Base_02):
-Base_33:=BasisTensor_2power(Base_30,Base_03):
-Base_24:=BasisTensor_2power(Base_20,Base_04):
-Base_15:=BasisTensor_2power(Base_10,Base_05):
+</Font>Base_51:=Basis_of_TensorC(Base_50,Base_01):
+Base_42:=Basis_of_TensorC(Base_40,Base_02):
+Base_33:=Basis_of_TensorC(Base_30,Base_03):
+Base_24:=Basis_of_TensorC(Base_20,Base_04):
+Base_15:=Basis_of_TensorC(Base_10,Base_05):
 <Font foreground="[51,102,255]">#7
-</Font>Base_52:=BasisTensor_2power(Base_50,Base_02):
-Base_43:=BasisTensor_2power(Base_40,Base_03):
-Base_34:=BasisTensor_2power(Base_30,Base_04):
-Base_25:=BasisTensor_2power(Base_20,Base_05):
+</Font>Base_52:=Basis_of_TensorC(Base_50,Base_02):
+Base_43:=Basis_of_TensorC(Base_40,Base_03):
+Base_34:=Basis_of_TensorC(Base_30,Base_04):
+Base_25:=Basis_of_TensorC(Base_20,Base_05):
 <Font foreground="[51,102,255]">#8
-</Font>Base_53:=BasisTensor_2power(Base_50,Base_03):
-Base_44:=BasisTensor_2power(Base_40,Base_04):
-Base_35:=BasisTensor_2power(Base_30,Base_05):
+</Font>Base_53:=Basis_of_TensorC(Base_50,Base_03):
+Base_44:=Basis_of_TensorC(Base_40,Base_04):
+Base_35:=Basis_of_TensorC(Base_30,Base_05):
 <Font foreground="[51,102,255]">#9
-</Font>Base_54:=BasisTensor_2power(Base_50,Base_04):
-Base_45:=BasisTensor_2power(Base_40,Base_05):
+</Font>Base_54:=Basis_of_TensorC(Base_50,Base_04):
+Base_45:=Basis_of_TensorC(Base_40,Base_05):
 <Font foreground="[51,102,255]">#10
-</Font>Base_55:=BasisTensor_2power(Base_50,Base_05):
+</Font>Base_55:=Basis_of_TensorC(Base_50,Base_05):
 </Text-field>
 </Input>
 </Group>
 <Group view="code" hide-output="false" labelreference="L587" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L1504" drawlabel="true" applyint="true" applyrational="true">
@@ -208,7 +208,7 @@ slF_01:=Matrix(5,5,[
 <Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Font foreground="[0,128,128]"># Accion de Sl2 sobre L*</Font>
 slE_10:=-Transpose(slE_01):
 slH_10:=-Transpose(slH_01):
-slF_10:=-Transpose(slF_01):<Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+slF_10:=-Transpose(slF_01):<Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0Yn</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L349" drawlabel="true" applyint="true" applyrational="true">
@@ -384,7 +384,7 @@ Esp_Dom_IM_10:=[seq(Matrix(IM_10).v,v in Esp_Dom)]:</Text-field>
 </Output>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" hide-output="false" labelreference="L1031" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0Yn</Equation></Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L1041" drawlabel="true" applyint="true" applyrational="true">
@@ -1061,7 +1061,7 @@ IM_11:=[op(ColumnSpace(MM_01))]:nops(%);</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-output="false" labelreference="L3104" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-input="false" hide-output="false" labelreference="L3112" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1137,7 +1137,7 @@ IM_21:=[op(ColumnSpace(MM_11))]:nops(%);</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="presentation" hide-output="false" inline-output="false" labelreference="L1909" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal"><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field style="Text" layout="Normal"><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group></Presentation-Block>
 <Group hide-output="false" labelreference="L780" drawlabel="true" applyint="true" applyrational="true">
@@ -1200,7 +1200,7 @@ B_Adj_D[2] := Covert_list(Esp_Dom_IM_11):</Text-field>
 </Group></Presentation-Block>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H11</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L2023" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[1],BaseExterior[1]):
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[1],BaseExterior[1]):
 Bas_Tensor_fin := BaseExterior[1]:</Text-field>
 </Input>
 </Group>
@@ -1286,7 +1286,7 @@ IM_31:=[op(ColumnSpace(MM_21))]:nops(%);</Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="presentation" hide-output="false" inline-output="false" labelreference="L1513" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal"><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field style="Text" layout="Normal"><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0Yn</Equation></Text-field>
 </Input>
 </Group></Presentation-Block><Presentation-Block>
 <Group view="code" hide-output="false" labelreference="L605" drawlabel="true" applyint="true" applyrational="true">
@@ -1349,8 +1349,8 @@ B_Adj_D[3] := Covert_list(Esp_Dom_IM_21):</Text-field>
 </Group></Presentation-Block>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H21</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L1191" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[2],BaseExterior[1]):
-Bas_Tensor_fin := BasisTensor_2powerList(BaseExterior[1],BaseExterior[1]):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[2],BaseExterior[1]):
+Bas_Tensor_fin := Basis_of_TensorL(BaseExterior[1],BaseExterior[1]):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" hide-output="false" labelreference="L1192" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1399,7 +1399,7 @@ Vectores_Formal(Central_21_z0,Base_11);</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1857" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0Yn</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1856" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1435,7 +1435,7 @@ Vectores_Formal(Central_21_z0,Base_11);</Text-field>
 </Output>
 </Group>
 <Group hide-output="false" labelreference="L1854" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0Yn</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -1556,8 +1556,8 @@ B_Adj_D[3] := Covert_list(Esp_Dom_IM_21):</Text-field>
 </Group></Presentation-Block>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H31</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L1102" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[3],BaseExterior[1]):
-Bas_Tensor_fin := BasisTensor_2powerList(BaseExterior[2],BaseExterior[1]):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[3],BaseExterior[1]):
+Bas_Tensor_fin := Basis_of_TensorL(BaseExterior[2],BaseExterior[1]):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" hide-output="false" labelreference="L1101" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1606,7 +1606,7 @@ Vectores_Formal(Central_31_z0,Base_21);</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1860" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1859" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1642,7 +1642,7 @@ Vectores_Formal(Central_31_z0,Base_21);</Text-field>
 </Output>
 </Group>
 <Group hide-output="false" labelreference="L1858" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -1770,8 +1770,8 @@ B_Adj_D[5] := Covert_list(Esp_Dom_IM_41):</Text-field>
 </Group></Presentation-Block>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H41</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L1183" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[4],BaseExterior[1]):
-Bas_Tensor_fin := BasisTensor_2powerList(BaseExterior[3],BaseExterior[1]):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[4],BaseExterior[1]):
+Bas_Tensor_fin := Basis_of_TensorL(BaseExterior[3],BaseExterior[1]):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" hide-output="false" labelreference="L1182" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1816,7 +1816,7 @@ Vectores_Formal(Central_41_z0,Base_31);</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1871" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0Yn</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1866" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1848,7 +1848,7 @@ Vectores_Formal(Central_41_z0,Base_31);</Text-field>
 </Output>
 </Group>
 <Group hide-output="false" labelreference="L1865" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -1951,8 +1951,8 @@ B_Adj_D[6] := Covert_list(Esp_Dom_IM_51):</Text-field>
 </Group></Presentation-Block>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H51</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L1185" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[5],BaseExterior[1]):
-Bas_Tensor_fin := BasisTensor_2powerList(BaseExterior[4],BaseExterior[1]):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[5],BaseExterior[1]):
+Bas_Tensor_fin := Basis_of_TensorL(BaseExterior[4],BaseExterior[1]):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" hide-output="false" labelreference="L1186" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -1990,7 +1990,7 @@ Vectores_Formal(Central_51_z0,Base_41);</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1878" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1876" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -2014,7 +2014,7 @@ Vectores_Formal(Central_51_z0,Base_41);</Text-field>
 </Output>
 </Group>
 <Group hide-output="false" labelreference="L1872" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -2429,8 +2429,8 @@ B_W2_D[3]:=Covert_list(Esp_Dom_IM_22):</Text-field>
 </Group></Presentation-Block>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H22</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L1195" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[2],BaseExterior[2]):
-Bas_Tensor_fin := BasisTensor_2powerList(BaseExterior[1],BaseExterior[2]):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[2],BaseExterior[2]):
+Bas_Tensor_fin := Basis_of_TensorL(BaseExterior[1],BaseExterior[2]):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" hide-output="false" labelreference="L1194" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -2487,7 +2487,7 @@ Vectores_Formal(Central_22_z0,Base_12);</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1881" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0Yn</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1880" drawlabel="true" applyint="true" applyrational="true">
@@ -2531,7 +2531,7 @@ Vectores_Formal(Central_22_z0,Base_12);</Text-field>
 </Output>
 </Group>
 <Group labelreference="L1879" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -2649,8 +2649,8 @@ B_W2_D[4]:=Covert_list(Esp_Dom_IM_32):</Text-field>
 </Group>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H32</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L1198" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[3],BaseExterior[2]):
-Bas_Tensor_fin := BasisTensor_2powerList(BaseExterior[2],BaseExterior[2]):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[3],BaseExterior[2]):
+Bas_Tensor_fin := Basis_of_TensorL(BaseExterior[2],BaseExterior[2]):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" hide-output="false" labelreference="L1197" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -2708,7 +2708,7 @@ Vectores_Formal(Central_32_z0,Base_22);</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1892" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1887" drawlabel="true" applyint="true" applyrational="true">
@@ -2752,7 +2752,7 @@ Vectores_Formal(Central_32_z0,Base_22);</Text-field>
 </Output>
 </Group>
 <Group labelreference="L1886" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -2870,8 +2870,8 @@ B_W2_D[5]:=Covert_list(Esp_Dom_IM_42):</Text-field>
 </Group>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H42</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L1200" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[4],BaseExterior[2]):
-Bas_Tensor_fin := BasisTensor_2powerList(BaseExterior[3],BaseExterior[2]):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[4],BaseExterior[2]):
+Bas_Tensor_fin := Basis_of_TensorL(BaseExterior[3],BaseExterior[2]):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" hide-output="false" labelreference="L1201" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -2920,7 +2920,7 @@ Vectores_Formal(Central_42_z0,Base_32);</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1899" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0Yn</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1897" drawlabel="true" applyint="true" applyrational="true">
@@ -2956,7 +2956,7 @@ Vectores_Formal(Central_42_z0,Base_32);</Text-field>
 </Output>
 </Group>
 <Group labelreference="L1893" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -3052,8 +3052,8 @@ B_W2_D[6]:=Covert_list(Esp_Dom_IM_52):</Text-field>
 </Group></Presentation-Block>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H52</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L1204" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[5],BaseExterior[2]):
-Bas_Tensor_fin := BasisTensor_2powerList(BaseExterior[4],BaseExterior[2]):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[5],BaseExterior[2]):
+Bas_Tensor_fin := Basis_of_TensorL(BaseExterior[4],BaseExterior[2]):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" hide-output="false" labelreference="L1203" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -3094,7 +3094,7 @@ Vectores_Formal(Central_52_z0,Base_42);</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1902" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L1903" drawlabel="true" applyint="true" applyrational="true">
@@ -3122,7 +3122,7 @@ Vectores_Formal(Central_52_z0,Base_42);</Text-field>
 </Output>
 </Group>
 <Group labelreference="L1900" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -3528,8 +3528,8 @@ B_W3_D[3]:=Covert_list(Esp_Dom_IM_23):</Text-field>
 </Group></Presentation-Block>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H23</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L2206" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[2],BaseExterior[3]):
-Bas_Tensor_fin := BasisTensor_2powerList(BaseExterior[1],BaseExterior[3]):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[2],BaseExterior[3]):
+Bas_Tensor_fin := Basis_of_TensorL(BaseExterior[1],BaseExterior[3]):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" hide-output="false" labelreference="L2198" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -3586,7 +3586,7 @@ Vectores_Formal(Central_23_z0,Base_13);</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2329" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0Yn</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2337" drawlabel="true" applyint="true" applyrational="true">
@@ -3630,7 +3630,7 @@ Vectores_Formal(Central_23_z0,Base_13);</Text-field>
 </Output>
 </Group>
 <Group labelreference="L2309" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -3748,8 +3748,8 @@ B_W3_D[4]:=Covert_list(Esp_Dom_IM_33):</Text-field>
 </Group>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H33</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L2208" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[3],BaseExterior[3]):
-Bas_Tensor_fin := BasisTensor_2powerList(BaseExterior[2],BaseExterior[3]):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[3],BaseExterior[3]):
+Bas_Tensor_fin := Basis_of_TensorL(BaseExterior[2],BaseExterior[3]):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" hide-output="false" labelreference="L2204" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -3806,7 +3806,7 @@ Vectores_Formal(Central_33_z0,Base_23);</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2281" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2264" drawlabel="true" applyint="true" applyrational="true">
@@ -3850,7 +3850,7 @@ Vectores_Formal(Central_33_z0,Base_23);</Text-field>
 </Output>
 </Group>
 <Group labelreference="L2273" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -3968,8 +3968,8 @@ B_W3_D[5]:=Covert_list(Esp_Dom_IM_43):</Text-field>
 </Group>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H43</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L2218" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[4],BaseExterior[3]):
-Bas_Tensor_fin := BasisTensor_2powerList(BaseExterior[3],BaseExterior[3]):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[4],BaseExterior[3]):
+Bas_Tensor_fin := Basis_of_TensorL(BaseExterior[3],BaseExterior[3]):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" hide-output="false" labelreference="L2298" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -4014,7 +4014,7 @@ Vectores_Formal(Central_43_z0,Base_33);</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2235" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0Yn</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2250" drawlabel="true" applyint="true" applyrational="true">
@@ -4046,7 +4046,7 @@ Vectores_Formal(Central_43_z0,Base_33);</Text-field>
 </Output>
 </Group>
 <Group labelreference="L2296" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -4142,8 +4142,8 @@ B_W3_D[6]:=Covert_list(Esp_Dom_IM_53):</Text-field>
 </Group></Presentation-Block>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H53</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L2229" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[5],BaseExterior[3]):
-Bas_Tensor_fin := BasisTensor_2powerList(BaseExterior[4],BaseExterior[3]):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[5],BaseExterior[3]):
+Bas_Tensor_fin := Basis_of_TensorL(BaseExterior[4],BaseExterior[3]):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" hide-output="false" labelreference="L2232" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -4180,7 +4180,7 @@ Vectores_Formal(Central_53_z0,Base_43);</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2326" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2342" drawlabel="true" applyint="true" applyrational="true">
@@ -4204,7 +4204,7 @@ Vectores_Formal(Central_53_z0,Base_43);</Text-field>
 </Output>
 </Group>
 <Group labelreference="L2344" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -4643,8 +4643,8 @@ B_W4_D[3]:=Covert_list(Esp_Dom_IM_24):</Text-field>
 </Group></Presentation-Block>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H24</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L2362" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[2],BaseExterior[4]):
-Bas_Tensor_fin := BasisTensor_2powerList(BaseExterior[1],BaseExterior[4]):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[2],BaseExterior[4]):
+Bas_Tensor_fin := Basis_of_TensorL(BaseExterior[1],BaseExterior[4]):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" hide-output="false" labelreference="L2354" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -4693,7 +4693,7 @@ Vectores_Formal(Central_24_z0,Base_14);</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2485" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0Yn</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2493" drawlabel="true" applyint="true" applyrational="true">
@@ -4729,7 +4729,7 @@ Vectores_Formal(Central_24_z0,Base_14);</Text-field>
 </Output>
 </Group>
 <Group labelreference="L2465" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -4847,8 +4847,8 @@ B_W4_D[4]:=Covert_list(Esp_Dom_IM_34):</Text-field>
 </Group>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H34</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L2364" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[3],BaseExterior[4]):
-Bas_Tensor_fin := BasisTensor_2powerList(BaseExterior[2],BaseExterior[4]):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[3],BaseExterior[4]):
+Bas_Tensor_fin := Basis_of_TensorL(BaseExterior[2],BaseExterior[4]):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" hide-output="false" labelreference="L2360" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -4897,7 +4897,7 @@ Vectores_Formal(Central_34_z0,Base_24);</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2437" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2420" drawlabel="true" applyint="true" applyrational="true">
@@ -4933,7 +4933,7 @@ Vectores_Formal(Central_34_z0,Base_24);</Text-field>
 </Output>
 </Group>
 <Group labelreference="L2429" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -5051,8 +5051,8 @@ B_W4_D[5]:=Covert_list(Esp_Dom_IM_44):</Text-field>
 </Group>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H44</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L2374" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[4],BaseExterior[4]):
-Bas_Tensor_fin := BasisTensor_2powerList(BaseExterior[3],BaseExterior[4]):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[4],BaseExterior[4]):
+Bas_Tensor_fin := Basis_of_TensorL(BaseExterior[3],BaseExterior[4]):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" hide-output="false" labelreference="L2454" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -5097,7 +5097,7 @@ Vectores_Formal(Central_44_z0,Base_34);</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2391" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0Yn</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2406" drawlabel="true" applyint="true" applyrational="true">
@@ -5129,7 +5129,7 @@ Vectores_Formal(Central_44_z0,Base_34);</Text-field>
 </Output>
 </Group>
 <Group labelreference="L2452" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -5225,8 +5225,8 @@ B_W4_D[6]:=Covert_list(Esp_Dom_IM_54):</Text-field>
 </Group></Presentation-Block>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H54</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L2385" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[5],BaseExterior[4]):
-Bas_Tensor_fin := BasisTensor_2powerList(BaseExterior[4],BaseExterior[4]):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[5],BaseExterior[4]):
+Bas_Tensor_fin := Basis_of_TensorL(BaseExterior[4],BaseExterior[4]):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" hide-output="false" labelreference="L2388" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -5263,7 +5263,7 @@ Vectores_Formal(Central_54_z0,Base_44);</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2482" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2498" drawlabel="true" applyint="true" applyrational="true">
@@ -5287,7 +5287,7 @@ Vectores_Formal(Central_54_z0,Base_44);</Text-field>
 </Output>
 </Group>
 <Group labelreference="L2500" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -5693,8 +5693,8 @@ B_W5_D[3]:=Covert_list(Esp_Dom_IM_25):</Text-field>
 </Group></Presentation-Block>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H25</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L2518" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[2],BaseExterior[5]):
-Bas_Tensor_fin := BasisTensor_2powerList(BaseExterior[1],BaseExterior[5]):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[2],BaseExterior[5]):
+Bas_Tensor_fin := Basis_of_TensorL(BaseExterior[1],BaseExterior[5]):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" hide-output="false" labelreference="L2510" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -5731,7 +5731,7 @@ Vectores_Formal(Central_25_z0,Base_15);</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2641" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0Yn</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2649" drawlabel="true" applyint="true" applyrational="true">
@@ -5755,7 +5755,7 @@ Vectores_Formal(Central_25_z0,Base_15);</Text-field>
 </Output>
 </Group>
 <Group hide-output="false" labelreference="L2621" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -5873,8 +5873,8 @@ B_W5_D[4]:=Covert_list(Esp_Dom_IM_35):</Text-field>
 </Group>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H35</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L2520" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[3],BaseExterior[5]):
-Bas_Tensor_fin := BasisTensor_2powerList(BaseExterior[2],BaseExterior[5]):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[3],BaseExterior[5]):
+Bas_Tensor_fin := Basis_of_TensorL(BaseExterior[2],BaseExterior[5]):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" hide-output="false" labelreference="L2516" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -5911,7 +5911,7 @@ Vectores_Formal(Central_35_z0,Base_25);</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2593" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2576" drawlabel="true" applyint="true" applyrational="true">
@@ -5935,7 +5935,7 @@ Vectores_Formal(Central_35_z0,Base_25);</Text-field>
 </Output>
 </Group>
 <Group labelreference="L2585" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -6053,8 +6053,8 @@ B_W5_D[5]:=Covert_list(Esp_Dom_IM_45):</Text-field>
 </Group>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H45</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L2530" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[4],BaseExterior[5]):
-Bas_Tensor_fin := BasisTensor_2powerList(BaseExterior[3],BaseExterior[5]):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[4],BaseExterior[5]):
+Bas_Tensor_fin := Basis_of_TensorL(BaseExterior[3],BaseExterior[5]):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" hide-output="false" labelreference="L2610" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -6091,7 +6091,7 @@ Vectores_Formal(Central_45_z0,Base_35);</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2547" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0Yn</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2562" drawlabel="true" applyint="true" applyrational="true">
@@ -6115,7 +6115,7 @@ Vectores_Formal(Central_45_z0,Base_35);</Text-field>
 </Output>
 </Group>
 <Group labelreference="L2608" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -6211,8 +6211,8 @@ B_W5_D[6]:=Covert_list(Esp_Dom_IM_55):</Text-field>
 </Group></Presentation-Block>
 <Section collapsed="true" isCollapsible="true" drawButton="true" MultipleChoiceAnswerIndex="-1" MultipleChoiceRandomizeChoices="false" TrueFalseAnswerIndex="-1" EssayAnswerRows="5" EssayAnswerColumns="60"><Title><Text-field style="Heading 3" layout="Heading 3">Accion central sobre H55</Text-field></Title><Presentation-Block>
 <Group hide-input="false" hide-output="false" labelreference="L2541" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := BasisTensor_2powerList(BaseExterior[5],BaseExterior[5]):
-Bas_Tensor_fin := BasisTensor_2powerList(BaseExterior[4],BaseExterior[5]):</Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal">Bas_Tensor_ini := Basis_of_TensorL(BaseExterior[5],BaseExterior[5]):
+Bas_Tensor_fin := Basis_of_TensorL(BaseExterior[4],BaseExterior[5]):</Text-field>
 </Input>
 </Group>
 <Group view="code" hide-input="false" hide-output="false" labelreference="L2544" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
@@ -6249,7 +6249,7 @@ Vectores_Formal(Central_55_z0,Base_45);</Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2638" drawlabel="true" applyint="true" applyrational="true">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 <Group hide-output="false" labelreference="L2654" drawlabel="true" applyint="true" applyrational="true">
@@ -6273,7 +6273,7 @@ Vectores_Formal(Central_55_z0,Base_45);</Text-field>
 </Output>
 </Group>
 <Group labelreference="L2656" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2I1EhRic=</Equation></Text-field>
+<Input><Text-field prompt="&gt; " style="Maple Input" layout="Normal"><Equation executable="true" style="2D Input" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">JSFH</Equation></Text-field>
 </Input>
 </Group>
 </Section>
@@ -6765,7 +6765,7 @@ od:</Text-field>
 </Section>
 </Section><Presentation-Block>
 <Group view="presentation" inline-output="false" labelreference="L3352" drawlabel="true" applyint="true" applyrational="true" applyexponent="false">
-<Input><Text-field style="Text" layout="Normal"><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2I1EhRicvJStleGVjdXRhYmxlR1EmZmFsc2VGJy8lLG1hdGh2YXJpYW50R1Enbm9ybWFsRic=">JSFH</Equation></Text-field>
+<Input><Text-field style="Text" layout="Normal"><Equation executable="true" style="2D Math" input-equation="" display="LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYlLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0YnLyUrZXhlY3V0YWJsZUdRJmZhbHNlRicvRjNRJ25vcm1hbEYn">LUklbXJvd0c2Iy9JK21vZHVsZW5hbWVHNiJJLFR5cGVzZXR0aW5nR0koX3N5c2xpYkdGJzYjLUkjbWlHRiQ2JVEhRicvJSdpdGFsaWNHUSV0cnVlRicvJSxtYXRodmFyaWFudEdRJ2l0YWxpY0Yn</Equation></Text-field>
 </Input>
 </Group></Presentation-Block>
 </Worksheet>
